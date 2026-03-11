@@ -1,10 +1,10 @@
 # athletisme-competition-website
 12 pages à faire :
 -accueil
-        - articles histoire / records
+        - page histoire plusieurs articles
 -compétition
-         - ~ 4 articles sport
-         - programme
+         - ~ 4 articles sports
+         - article équipes / participants
 - billetterie 
      - info complémentaires
      - page de réservation
