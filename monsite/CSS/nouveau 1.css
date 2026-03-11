@@ -1,0 +1,8 @@
+header h1 span {color : red}
+
+main h1 span {font-style: italic}
+main p span {color : FF00FF}
+body{
+	background-image: url("../images/Harold.jpg");
+	background-repeat :no-repeat;
+	background-position : bottom center}; 	
