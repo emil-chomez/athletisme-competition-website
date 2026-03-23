@@ -3,29 +3,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- <link rel="stylesheet" href="../css/main.css">  -->
 
 
-<head>
+<header>
     <meta charset="UTF-8">
-    <title>Payement page</title>
+    <title id="title_payement">Payement page</title>
+    <meta name="author" content="Khaled">
+    <link rel="icon" href="">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="../css/main.css"
 
-
-</head>
+</header>
 
 
 <body>
-    <p1>Payements de choix de payement<br></p>
-    <style>
+    <p1>Payements et choix de payement<br></p>
+
+    <style> 
+    p1{
+        margin-top: 10%;
+        
+    }
 
     table, th, td{
+        margin-top: 20%;
         border: 1px solid black;
         border-collapse: collapse;
     }
-
     </style>
-    <table style="width: 100%">
-        <tr>
+    
+    <table id="pay_table" style="width: 100%">
+        <tr">
             <th>Ticket</th>
             <th>Prix total</th>
             <th>Mode de payement</th>
