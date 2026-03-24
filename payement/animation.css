@@ -17,7 +17,7 @@ h1, .paytable{
 }
 
 .paytable th {
-    background-color: #6a6a6a; /* Gives the top row a light grey color */
+    background-color: lightgray; /* Gives the top row a light grey color */
 }
 
 #pay_button{
