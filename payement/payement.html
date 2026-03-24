@@ -1,69 +1,63 @@
-<!-- Page de payement par Khaled -->
-
 <!DOCTYPE html>
 <html lang="fr">
-
-
-
-<header>
+<head>
     <meta charset="UTF-8">
-    <title id="title_payement">Payement page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title_payement">Page de Paiement</title>
     <meta name="author" content="Khaled">
-    <link rel="icon" href="">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="../css/main.css"
-
-</header>
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css"> <link rel="stylesheet" href="/payement/animation.css">
+</head>
 
 <body>
-    <p1>Payements et choix de payement<br></p>
 
+    <h1>Paiements et choix de paiement</h1>
 
-<!-- Style place-->
-    <style> 
-    p1{
-        margin-top: 25%;
-        
-    }
-
-    table, th, td{
-        margin-top: 20%;
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-    </style>
-
-
-
-<!-- Table place-->    
-    <table id="pay_table" style="width: 100%">
-        <tr>
-            <th style="width: auto">Ticket</th>
-            <th style="width: auto">Prix total</th>
-            <th style="width:auto">Mode de payement</th>
-        </tr>
-
-        <tr>
-            <th style="width: auto">nombre de Ticket</th> <!-- Nombre de tickets a afficher-->
-            <th>Total Euro</th> <!-- prix total -->
-            <th>Select mode de payement</th> <!--Master, Visa, Paypal-->
-        </tr>
+    <table id="pay_table" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Ticket</th>
+                <th>Prix total</th>
+                <th>Mode de paiement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre de Tickets</td> 
+                <td>Total Euro</td> 
+                <td>Sélectionnez le mode</td>
+            </tr>
+        </tbody>
     </table>
 
+    <br>
 
-    <label for="payement_option">Choisissez le mode de payement:</label>
-    <select name="payement_option" id="payement_option">
-        <optgroup label="Online payement system">
-            <option value="Paypal">Paypal</option>
-            <option value="Mastercard">Mastercard</option>dssd
-            <option value="Visa">Visa</option>
-        </optgroup>
-    </select>
-    <br><br>
-    <input type="submit" value="Payer maintenant">
+    <form action="../payement/submit-payment.html" method="POST">
+        <label for="payement_option">Choisissez le mode de paiement :</label>
+        <select name="payement_option" id="payement_option">
+            <optgroup label="Systèmes de paiement en ligne">
+                <option value="Paypal">Paypal</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+            </optgroup>
+        </select>
 
+        <div class="row" style="display: flex; gap: 10px; margin-top: 20px;">
+            <div>
+                <img src="../images/paypal_logo.jpg" alt="Paypal" class="paylogo" width="50">
+            </div>
+            <div> 
+                <img src="../images/mastercard_logo.png" alt="Mastercard" class="paylogo" width="50">
+            </div>
+            <div>
+                <img src="../images/visa_logo.png" alt="Visa" class="paylogo" width="50">
+            </div>
+        </div>
 
-
+        <br>
+        <input type="submit" value="Payer maintenant" >
+    </form>
 
 </body>
+</html>

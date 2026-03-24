@@ -1,3 +1,28 @@
 /*
 page d'animation par khaled
 */
+p1{
+        margin-top: 25%;
+        
+}
+
+table, th, td{
+        margin-top: 20%;
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+
+
+.paylogo {
+    width: 10px;
+    height:10px;
+    display:flex;
+    float: left;
+    padding: 5px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
