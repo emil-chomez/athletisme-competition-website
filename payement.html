@@ -8,22 +8,31 @@
     <meta name="author" content="Khaled">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css"> 
-    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/animation.css">
 
 </head>
 
 <header>
 
+
     
     <div id="brand">
-        <a href="../index.html"> 
-            <img id="logo" src="../images/logo.png" alt="logo"></a>
+        <a href="index.html"> 
+            <img id="logo" src="images/logo.png" alt="logo"></a>
         <div id="brand-text">
             <h1>Paris Athletics</h1>
             <h2>2026</h2>
         </div>
     </div>
+
+    <nav>
+        <a class="nav" id="actif" href="index.html">Accueil</a>
+        <a class="nav" href="competition.html">Compétition</a>
+        <a class="nav" href="billeterie.html">Billeterie</a>
+        <a class="nav" href="information.html">information</a>
+        <a class="nav" href="contact.html">Contact</a>
+    </nav>
         
 
 </header>
@@ -50,7 +59,7 @@
 
     <br>
 
-    <form id="payement" action="../payement/submit-payment.html" method="POST">
+    <form id="payement" action="payement/submit-payment.html" method="POST">
         <label style="margin-left: 1%;" for="payement_option">Choisissez le mode de paiement :</label>
         <select name="payement_option" id="payement_option">
             <optgroup label="Systèmes de paiement en ligne">
@@ -62,13 +71,13 @@
 
         <div class="row"  style="display: flex; gap: 10px; margin-top: 20px; margin-left: 1%;"> <!--css compris ! -->
             <div>
-                <img src="../images/paypal_logo.jpg" alt="Paypal" class="paylogo" width="50">
+                <img src="images/paypal_logo.jpg" alt="Paypal" class="paylogo" width="50">
             </div>
             <div> 
-                <img src="../images/mastercard_logo.png" alt="Mastercard" class="paylogo" width="50">
+                <img src="images/mastercard_logo.png" alt="Mastercard" class="paylogo" width="50">
             </div>
             <div>
-                <img src="../images/visa_logo.png" alt="Visa" class="paylogo" width="50">
+                <img src="images/visa_logo.png" alt="Visa" class="paylogo" width="50">
             </div>
         </div>
 
