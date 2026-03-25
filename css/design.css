@@ -35,6 +35,6 @@ h1, .paytable{
 #cordinations{
     display: flex;
     justify-content: right;
-    align-items:center;
+    align-items:right;
 }
 
