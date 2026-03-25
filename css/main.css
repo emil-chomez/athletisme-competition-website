@@ -70,16 +70,56 @@ header a.nav{
 /* FOOTER */
 footer {
     width: 100%;
-    background-color: #3945c6;
+    background-color:#1a227c;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #newsletter {
+    width: 100%;
+    background-color: #3945c6;
     text-align: center;
     padding-bottom: 15px;
 }
+#newsletter h2{
+    color:aliceblue;
+}
 #footer-grid {
+    max-width: 1000px;
     display:grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-column p{
+    font-size: 0.9rem;
+    margin:0px;
+}
+.footer-column p.contact{
+    margin-top: 14px;
+}
+#footer-social{
+    padding-top:14px;
+    padding-bottom: 10px;
+}
+#footer-social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    
+}
+#footer-bottom{
+    width: 1000px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+#footer-bottom a{
+    text-decoration: none;
+    color: yellow;
 }
