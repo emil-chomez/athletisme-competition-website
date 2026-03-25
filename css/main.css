@@ -147,12 +147,7 @@ footer a{
 
 /*=============================================================SUBMIT KHALED==================================*/
 
-p{
-    position: absolute ;
-    margin-left: 48%;
-    margin-top: 30%;
-    
-}
+
 
 
 
@@ -256,11 +251,6 @@ h1, .paytable{
     align-items: center;
 }
 
-#table_cordinations{
-    display: flex;
-    justify-content: right;
-    align-items:right;
-}
 
 
 #retour_button{
@@ -282,5 +272,14 @@ h1, .paytable{
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 4px;
+}
+
+#contact-grid { /*=========================PAS TERMINE   =====================================*/
+  display:grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+  background-color:white;
+  padding: 10px;
+  
 }
 /* DESIGN KHALED FIN */
