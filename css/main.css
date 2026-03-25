@@ -66,10 +66,13 @@ header a.nav{
 }
 footer {
     width: 100%;
-    padding: 0 40px;
     background-color: #3945c6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+}
+#newsletter {
+    text-align: center;
+    padding-bottom: 15px;
+
 }
