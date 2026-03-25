@@ -1,6 +1,7 @@
 
 body {
     margin : 0 auto;
+    background-color: rgb(225, 225, 225);
 }
 /* HEADER */
 header {  
@@ -10,9 +11,15 @@ header {
     position:sticky;
     top:0;
     background-color: #1a227c;
+    
+}
+#in-header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 #brand {
     display:flex;
@@ -26,7 +33,7 @@ header {
     text-decoration: none;
 }
 #brand-text span{
-    display:block;
+    display:inline-block;
     line-height: 15px;
     font-size: 0.7em;
     letter-spacing: 2px;
@@ -46,7 +53,8 @@ header a.nav{
     color :aliceblue;
 }
 #actif{
-    border-radius: 7px;
+    padding: 0 5px 0 5px;
+    border-radius: 8px;
     background-color: yellow;
     color : black;
 }
@@ -71,14 +79,24 @@ header a.nav{
 }
 /*Fil d'arianne*/
 #fil-arianne{
-    padding-left: 200px;
+    background-color: #1a227c;
+    width: 100%;
+}
+nav.breadcrumb{
+    display:flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: aliceblue;
 }
 .breadcrumb ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left:10%;
   align-items: end;
   justify-content: start;
 }
@@ -92,47 +110,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-#banniere-principale {
-    position: relative;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-}
-#bp-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-#bg-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(26, 35, 126, 0.85), rgba(13, 22, 66, 0.75));
-    z-index: 2;
-}
-#banniere-content {
-    z-index: 3;
-    position: relative;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-}
+
 
 /* FOOTER */
 footer {
@@ -205,6 +184,92 @@ footer a{
 #footer-bottom a{
     text-decoration: none;
     color: yellow;
+}
+/*ACCUEIL*/
+    /*banniere*/
+    #banniere-principale {
+        position: relative;
+        width:100%;
+    }
+    #bp-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    #bg-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(26, 35, 126, 0.85), rgba(13, 22, 66, 0.75));
+        z-index: 2;
+    }
+    #banniere-content {
+        z-index: 3;
+        flex-direction: column;
+        position: relative;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;      
+    }
+section.accueil {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin:0 auto;
+}
+.accueil h3.section-title {
+    font-size: 2em;
+    color: #0a115e;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.accueil h3.section-title::after{
+    content: '';
+  display: block;
+  width: 60px;
+  height: 6px;
+  background: yellow;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.accueil div.grid{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 25px;
+}
+.hl-box {
+    text-align: center;
+    width: 200px;
+    border-radius: 25px;
+    padding:30px 20px;
+    box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.hl-icon {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom:15px;
+}
+h3.hl-nb{
+    color:#1a227c;
+    font-size: 1.7em;
+}
+p.hl-dc{
+    color:rgb(86, 84, 84);
 }
 
 /*=============================================================SUBMIT KHALED==================================*/
