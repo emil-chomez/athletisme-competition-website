@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title id="title_payement">contact</title>
@@ -13,30 +13,53 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css"> 
-    <link rel="stylesheet" href="">
-    <div id="brand">
-        <a href="index.html"> 
-                <img id="logo" src="images/logo.png" alt="logo"></a>
-        <div id="brand-text">
-            <h1>Paris Athletics</h1>
-            <h2>2026</h2>
-        </div>
-    </div>
+    <link rel="stylesheet" href="css/design.css">
+</head>
 
-    <nav>
-        <a class="nav" id="actif" href="index.html">Accueil</a>
-        <a class="nav" href="competition.html">Compétition</a>
-        <a class="nav" href="billeterie.html">Billeterie</a>
-        <a class="nav" href="information.html">information</a>
-        <a class="nav" href="contact.html">Contact</a>
-    </nav>
-
-</header>
 
 
 <body>
-    <h1>My First Google Map</h1>
+
+    <header>
+        
+        <div id="brand">
+            <a href="index.html"> 
+                    <img id="logo" src="images/logo.png" alt="logo"></a>
+            <div id="brand-text">
+                <h1>Paris Athletics<span>2026</span></h1>
+            </div>
+        </div>
+
+        <nav>
+            <a class="nav" id="actif" href="index.html">Accueil</a>
+            <a class="nav" href="competition.html">Compétition</a>
+            <a class="nav" href="billeterie.html">Billeterie</a>
+            <a class="nav" href="information.html">information</a>
+            <a class="nav" href="contact.html">Contact</a>
+        </nav>
+        <div id="searchbar">
+            <input type="text" placeholder="Rechercher..." name="searchbar">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+    </header>
 
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.901494628752!2d4.366918776788126!3d50.85150835840562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4ce9cfb50cf%3A0xecd042e116ed41ac!2sEPFC!5e0!3m2!1sen!2sbe!4v1774349182817!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="contact_form">
+        <h>Envoyez-nous un message</h>
+
+        
+    </div>
+
+    <div id="cordinations">
+        <h1>Contactez-nous</h1>
+
+        <h2>Nos coordonnées</h1>
+        <img src="images/map_pin.png" width="40" height="40"">  <p>Stade de France<br>93200 Saint-Denis, France</p>
+        <p1><img width="40" height="40" src="https://img.icons8.com/?size=100&id=bqI4gOgp4z1f&format=png&color=000000" alt="email-open"/> e-mail: info@paris-athletics2026.fr</p1>
+    </div>
+
+
+    <div id="map">
+        <iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.5215346776176!2d2.3574591766966857!3d48.92450749605104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ebadd2263bf%3A0x70c04f7109156311!2sStade%20de%20France!5e0!3m2!1sen!2sbe!4v1774425497276!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </body>
