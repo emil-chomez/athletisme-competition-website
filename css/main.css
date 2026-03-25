@@ -144,3 +144,143 @@ footer a{
     text-decoration: none;
     color: yellow;
 }
+
+/*=============================================================SUBMIT KHALED==================================*/
+
+p{
+    position: absolute ;
+    margin-left: 48%;
+    margin-top: 30%;
+    
+}
+
+
+
+/* From Uiverse.io by narmesh_sah */ 
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.2);
+
+  --from: 200px;
+  --to: 40px;
+  --size: 32px;
+  --time: 6s;
+  --count: 100;
+  --turns: 6;
+}
+
+.circle {
+  position: absolute;
+
+  --delay: calc(var(--time) / var(--count) * -1 * var(--i));
+  rotate: calc(var(--turns) * 1turn / var(--count) * var(--i));
+
+  animation: circle var(--time) var(--delay) ease-in-out infinite;
+}
+.circle::before {
+  content: "";
+  display: block;
+  width: var(--size);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  transform-origin: center center;
+
+  animation: circleSize var(--time) var(--delay) ease-in-out infinite;
+}
+
+/* rainbow color using HSL */
+.rainbow .circle::before {
+  background-color: hsl(
+    calc(1turn / (var(--count) / var(--turns)) * var(--i)) 100% 70%
+  );
+}
+
+/* animations */
+@keyframes circle {
+  from {
+    transform: translate(0, var(--from));
+  }
+  to {
+    transform: translate(0, var(--to));
+  }
+}
+@keyframes circleSize {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  25%,
+  50% {
+    transform: scale(1);
+  }
+}
+
+
+/*============================================================SUBMIT KHALED FIN=========================================*/
+
+/* ============================================================DESIGN KHALED ========================================================*/
+
+
+h1, .paytable{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.paytable {
+    width:max-content;
+    border-collapse: collapse; /* Joins the lines together */
+}
+
+.paytable th, .paytable td {
+    border: 1px solid black; /* Makes the lines visible */
+    padding: 10px;           /* Adds space around the text */
+    text-align: left;
+}
+
+.paytable th {
+    background-color: lightgray; /* Gives the top row a light grey color */
+}
+
+#pay_button{
+    margin-left: 1%;
+}
+
+
+
+#map{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table_cordinations{
+    display: flex;
+    justify-content: right;
+    align-items:right;
+}
+
+
+#retour_button{
+    display: flex;
+
+}
+
+
+.button-class {
+	background-color: rgb(108, 108, 108);
+			/* Green */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+/* DESIGN KHALED FIN */
