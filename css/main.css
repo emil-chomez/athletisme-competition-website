@@ -1,4 +1,4 @@
-/* test non-sens git*/
+
 body {
     margin : 0 auto;
 }
@@ -65,7 +65,8 @@ header a.nav{
     cursor: pointer;
     font-size: 1.1em;
 }
-/*emil est le plus fort*/
+/* MAIN */
+
 /* FOOTER */
 footer {
     width: 100%;
@@ -82,5 +83,3 @@ footer {
     display:grid;
     grid-template-columns: repeat(4,1fr);
 }
-/*test par emil*/
-/*test par khaled*/
