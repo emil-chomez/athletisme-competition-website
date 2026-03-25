@@ -2,6 +2,7 @@
 body {
     margin : 0 auto;
 }
+/* HEADER */
 header {    
     width:100%;
     padding: 10px 0; 
@@ -64,6 +65,8 @@ header a.nav{
     cursor: pointer;
     font-size: 1.1em;
 }
+/*emil est le plus fort*/
+/* FOOTER */
 footer {
     width: 100%;
     background-color: #3945c6;
@@ -79,6 +82,4 @@ footer {
     display:grid;
     grid-template-columns: repeat(4,1fr);
 }
-#footercolumn{
-    padding-left: 40px;
-}
+
