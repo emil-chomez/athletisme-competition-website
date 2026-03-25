@@ -294,7 +294,7 @@ h1, .paytable{
 
 #contact-grid { /*=========================PAS TERMINE   =====================================*/
   display:grid;
-  max-width: 1000px;
+  text-align: center;
   grid-template-columns: 1fr 1fr;
   background-color:white;
   padding: 10px;
