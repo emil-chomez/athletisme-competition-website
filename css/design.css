@@ -23,3 +23,18 @@ h1, .paytable{
 #pay_button{
     margin-left: 1%;
 }
+
+
+
+#map{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cordinations{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+}
+
