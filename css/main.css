@@ -210,9 +210,6 @@ footer a{
 /*=============================================================SUBMIT KHALED==================================*/
 
 
-
-
-
 /* From Uiverse.io by narmesh_sah */ 
 .loader {
   position: absolute;
@@ -338,10 +335,10 @@ h1, .paytable{
 
 #contact-grid { /*=========================PAS TERMINE   =====================================*/
   display:grid;
-  max-width: 1000px;
+  text-align: center;
   grid-template-columns: 1fr 1fr;
   background-color:white;
   padding: 10px;
   
 }
-/* DESIGN KHALED FIN */
+/* =======================DESIGN KHALED FIN ==========================*/
