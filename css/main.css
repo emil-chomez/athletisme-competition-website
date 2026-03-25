@@ -74,5 +74,11 @@ footer {
 #newsletter {
     text-align: center;
     padding-bottom: 15px;
-
+}
+#footer-grid {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#footercolumn{
+    padding-left: 40px;
 }
