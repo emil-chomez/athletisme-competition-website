@@ -517,6 +517,7 @@ section.accueil {
         color: rgb(96, 96, 96);
     }
     
+<<<<<<< HEAD
     
 
 .detail-content{
@@ -569,6 +570,8 @@ section.accueil {
 
 
 
+=======
+>>>>>>> bbd7609 (added information page header and footer)
 /*=============================================================SUBMIT KHALED==================================*/
 
 
@@ -723,7 +726,9 @@ h1, .paytable{
     margin-top: auto;
 }
 
-
+#left_contact.input{
+    text-box: 50em;
+}
 
 
 
