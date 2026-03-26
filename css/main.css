@@ -221,9 +221,8 @@ footer a{
         color: white;
         overflow: hidden;      
     }
-    h3.banniere-date{
+    p.banniere-date{
         color:yellow;
-        font-size: 1.4em;
         margin:0px;
         margin-bottom:20px;
     }
@@ -248,7 +247,6 @@ footer a{
     .btn-primaire{
         padding: 12px 30px;
         background-color: yellow;
-        border: 2px solid yellow;
         color: #0a115e;
         border-radius:30px;
         text-decoration: none;
