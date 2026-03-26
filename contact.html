@@ -42,19 +42,43 @@
             </div>    
         </header> <!--Body---- HEADER FIN -->
 
+
+                        <!--------------------------------------- Contact Form ----------------------->
     <section id="contact-grid">
         <div class = "formulaire">
-            <h2>Envoyez-nous un message</h2>
-            <form>
-                <label for ="nom">Nom</label>
-                <input type="text" id="nom" name="nom">
-                <label for="prenom">Prenom</label>
-                <input type="text" id="prenom" name="prenom"><br>
-                <label for="Adresse e-mail"></label>
+            <h2 id="">Envoyez-nous un message</h2>
+            <form id="left_contact">
+                <label for ="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" required=""> <br>
+
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" required=""><br>
+
+                <label for="adresse e-mail">Adresse e-mail *</label>
+                <input type="email" id="email" name="email" required=""><br>
+
+                <label for = "phone_number">Téléphone *</label>
+                <input type="text" name="phone_number" id="phone_number" required= """><br>
                 
+                
+                <label for="sujet">Sujet</label>
+                <select name="sujet" id="sujet">
+                    <optgroup label="Sujet">
+                        <option value="sujet">-- Choisir un sujet --</option>
+                        <option value="billetrie">Billetrie</option>
+                        <option value="information">Demande d'information</option>
+                        <option value="press">Accréditation presse</option>
+                        <option value="sponsor/part">Partenariat / Sponsoring</option>
+                        <option value="pmr">Accessibilité PMR </option>
+                        <option value="other">Autre</option>
+                    </optgroup>
+                </select>
+                <br>
+                <label for="contact_message">Message *</label>
+                <textarea name="message"  id="message" rows="10" cols="50" required=""></textarea>
             </form>
-        </div>
-        <div class="cordination">
+        </div> <!-------------------------------------- Contact form END -------------------------------------->
+        <div id="right_contact" class="cordination">
             <h2>Nos coordonnées</h2>
             <div><img src="images/map_pin.png" width="40" height="40"> <h2>Adresse</h2> <p>Stade de France<br>93200 Saint-Denis, France</p></div>
             <div><img width="40" height="40" src="https://img.icons8.com/?size=100&id=bqI4gOgp4z1f&format=png&color=000000" alt="email-open"/> <h2>E-mail</h2> info@paris-athletics2026.fr</div>
@@ -75,7 +99,7 @@
     </section>
 
     <div id="map">
-        <iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.5215346776176!2d2.3574591766966857!3d48.92450749605104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ebadd2263bf%3A0x70c04f7109156311!2sStade%20de%20France!5e0!3m2!1sen!2sbe!4v1774425497276!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="google_map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.5215346776176!2d2.3574591766966857!3d48.92450749605104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ebadd2263bf%3A0x70c04f7109156311!2sStade%20de%20France!5e0!3m2!1sen!2sbe!4v1774425497276!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 
