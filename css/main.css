@@ -607,10 +607,11 @@ h1, .paytable{
 }
 
 #left_contact{
-    display:flexbox;
+    display:grid;
     grid-gap: 10px;
     margin-left: 30%;
     margin-right: 0%;
+    font-size:large;
 }
 
 #right_contact{
@@ -620,6 +621,7 @@ h1, .paytable{
     margin-right: 25%;
     margin-top: auto;
 }
+
 
 
 

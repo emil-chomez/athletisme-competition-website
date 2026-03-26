@@ -46,7 +46,7 @@
                         <!--------------------------------------- Contact Form ----------------------->
     <section id="contact-grid">
         <div class = "formulaire">
-            <h2>Envoyez-nous un message</h2>
+            <h2 id="">Envoyez-nous un message</h2>
             <form id="left_contact">
                 <label for ="nom">Nom *</label>
                 <input type="text" id="nom" name="nom" required=""> <br>
@@ -54,14 +54,14 @@
                 <label for="prenom">Prénom *</label>
                 <input type="text" id="prenom" name="prenom" required=""><br>
 
-                <label for="Adresse e-mail">Adresse e-mail *</label>
+                <label for="adresse e-mail">Adresse e-mail *</label>
                 <input type="email" id="email" name="email" required=""><br>
 
                 <label for = "phone_number">Téléphone *</label>
                 <input type="text" name="phone_number" id="phone_number" required= """><br>
                 
                 
-                <label style="margin-left: 1%;" for="sujet">Sujet</label>
+                <label for="sujet">Sujet</label>
                 <select name="sujet" id="sujet">
                     <optgroup label="Sujet">
                         <option value="sujet">-- Choisir un sujet --</option>
@@ -74,8 +74,8 @@
                     </optgroup>
                 </select>
                 <br>
-                <label for="contact_message" >Message *</label>
-                <textarea name="message" id="message" required=""></textarea>
+                <label for="contact_message">Message *</label>
+                <textarea name="message"  id="message" rows="10" cols="50" required=""></textarea>
             </form>
         </div> <!-------------------------------------- Contact form END -------------------------------------->
         <div id="right_contact" class="cordination">
