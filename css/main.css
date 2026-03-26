@@ -1,7 +1,7 @@
 
 body {
     margin : 0 auto;
-    background-color: rgb(225, 225, 225);
+    background-color: white; /* Modified by Khaled */
 }
 /* HEADER */
 header {  
@@ -343,6 +343,8 @@ p.hl-dc{
 /* ============================================================DESIGN KHALED ========================================================*/
 
 
+
+
 h1, .paytable{
     margin-left: 1%;
     margin-right: 1%;
@@ -356,7 +358,7 @@ h1, .paytable{
 .paytable th, .paytable td {
     border: 1px solid black; /* Makes the lines visible */
     padding: 10px;           /* Adds space around the text */
-    text-align: left;
+    text-align:center;
 }
 
 .paytable th {
