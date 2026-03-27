@@ -653,11 +653,13 @@ section.accueil {
 h1, .paytable{
     margin-left: 1%;
     margin-right: 1%;
+    
 }
 
 .paytable {
     width:max-content;
     border-collapse: collapse; /* Joins the lines together */
+    
 }
 
 .paytable th, .paytable td {
@@ -671,7 +673,7 @@ h1, .paytable{
 }
 
 #pay_button{
-    margin-left: 1%;
+    margin-left: 0%;
 }
 
 
@@ -745,9 +747,29 @@ h1, .paytable{
     width: 100%;
     text-align: center;
 
-    
 }
 
+#payement_form{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: auto;
+    align-self: auto;
+    justify-content: center;
+}
+
+
+#payement_table{
+    width:max-content;
+    border-collapse: collapse;
+    border: 1px solid black; /* Makes the lines visible */
+    padding: 10px;           /* Adds space around the text */
+    text-align:center;
+    width: auto;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
