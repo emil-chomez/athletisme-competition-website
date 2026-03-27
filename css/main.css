@@ -82,6 +82,7 @@ header a.nav{
 #fil-arianne{
     background-color:lightgrey;
     width: 100%;
+    padding:10px 0;
 }
 nav.breadcrumb{
     display:flex;
@@ -135,6 +136,9 @@ footer ul{
     padding:0;
     margin:0;
 }
+footer ul li{
+    padding-bottom:6px;
+}
 footer a{
     color:aliceblue;
     text-decoration: none;
@@ -144,6 +148,25 @@ footer a{
     background-color: #3945c6;
     text-align: center;
     padding-bottom: 15px;
+}
+#newsletter-form{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+#newsletter input{
+    border-radius: 20px;
+    padding: 3px 6px;
+    width:300px;
+    border:none;
+  
+}
+#newsletter button{
+    padding:9px 18px;
+    border-radius:20px ;
+    background-color: rgb(255, 230, 0);
+    border:none;
+    cursor: pointer;
 }
 .sr-only{
     position: absolute;

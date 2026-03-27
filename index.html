@@ -297,13 +297,11 @@
             <section id="newsletter">
                 <h3>Restez informé</h3>
                 <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
-                <div>
-                    <form>
-                        <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
-                        <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
-                        <input type="submit" name="send" value="S'inscrire">
-                    </form>
-                </div>
+                <form id="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
+                    <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
+                    <button type="submit">S'inscrire</button>
+                </form>
             </section>
             <section id="footer-grid">
                 <div class="footer-column">
@@ -328,8 +326,8 @@
                 <div class="footer-column">
                     <h3>Épreuves populaires</h3>
                     <ul>
-                        <li>100 mètres</li>
-                        <li>Marathon</li>
+                        <li><a href="pages/epreuve-100m.html"> 100 mètres</a></li>
+                        <li><a href="pages/epreuve-marathon.html"> Marathon</a></li>
                         <li>Saut à la perche</li>
                         <li>Saut en hauteur</li>
                     </ul>
