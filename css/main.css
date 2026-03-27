@@ -710,8 +710,8 @@ h1, .paytable{
 
 
 
-#retour_button{
-    display: flex;
+#return_button{
+    margin-top: 1%;
 
 }
 
@@ -773,12 +773,13 @@ h1, .paytable{
 }
 
 #payement_form{
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     width: 100%;
     left: auto;
     align-self: auto;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 
@@ -794,6 +795,11 @@ h1, .paytable{
     margin-right: auto;
 }
 
+#logo_payement{
+    display: flex;
+    justify-content: center;
+
+}
 
 
 /* =======================Design of all pages KHALED FIN ==========================*/
