@@ -731,6 +731,15 @@ h1, .paytable{
     font-size: large;
 }
 
+#confirmed{
+    position: absolute;
+    top: 57.5%;
+    width: 100%;
+    text-align: center;
+
+    
+}
+
 
 
 
