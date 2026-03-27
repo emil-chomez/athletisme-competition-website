@@ -25,25 +25,23 @@
         <header>
             <div id="in-header">
                 <div id="brand">
-                    <a href="index.html"> 
+                <a href="index.html"> 
                     <img id="logo" src="images/logo.png" alt="logo"></a>
-
-                    <div id="brand-text">
-                        <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
-                    </div>
-                
+                <div id="brand-text">
+                   <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
                 </div>
-
+                </div>
                 <nav>
-                    <a class="nav" id="actif" href="index.html">Accueil</a>
+                    <a class="nav" href="index.html">Accueil</a>
                     <a class="nav" href="competitions.html">Compétition</a>
-                    <a class="nav" href="tarifs.html">Billeterie</a>
+                    <a class="nav" id="actif" href="tarifs.html">Billeterie</a>
                     <a class="nav" href="contact.html">Contact</a>
                 </nav>
-
                 <div id="searchbar">
-                    <input type="text" placeholder="Rechercher..." name="searchbar">
-                    <button><i class="fa fa-search"></i></button>
+                    <form>
+                        <input type="text" placeholder="Rechercher..." name="searchbar">
+                        <button><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
             </div>    
         </header>
@@ -72,43 +70,41 @@
             <section id="newsletter">
                 <h3>Restez informé</h3>
                 <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
-                <div>
-                    <label class="skip-link" for="newsletter-email">Addresse e-mail</label>
+                <form id="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
                     <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
-                    <input type="submit" name="send" value="S'inscrire">
-                </div>
+                    <button type="submit">S'inscrire</button>
+                </form>
             </section>
             <section id="footer-grid">
                 <div class="footer-column">
                     <h3>Paris Athletics 2026</h3>
                     <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde pour trois jours de compétitions exceptionnelles au Stade de France.</p>
                     <div id="footer-social">
-                        <a href="#" >f</a>
-                        <a href="#" >X</a>
-                        <a href="#" >ig</a>
-                        <a href="#" >yt</a>
+                        <a href="https://www.facebook.com/" target="_blank">f</a>
+                        <a href="https://x.com/X" target="_blank">X</a>
+                        <a href="https://instagram.com/" target="_blank">ig</a>
+                        <a href="https://youtube.com/" target="_blank">yt</a>
                     </div>
                 </div>
                 <div class="footer-column">
                     <h3>Navigation</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="competition.html">compétitions</a></li>
-                        <li><a href="billeterie.html">Billeterie</a></li>
+                        <li><a href="competitions.html">compétitions</a></li>
+                        <li><a href="tarifs.html">Billeterie</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h3>Épreuves populaires</h3>
                     <ul>
-                        <li>100 mètres</li>
-                        <li>Marathon</li>
+                        <li><a href="pages/epreuve-100m.html"> 100 mètres</a></li>
+                        <li><a href="pages/epreuve-marathon.html"> Marathon</a></li>
                         <li>Saut à la perche</li>
                         <li>Saut en hauteur</li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <p>Stade de France <br>93200 Saint-Denis, France</p>
@@ -116,7 +112,6 @@
                     <p>+33 1 55 93 00 00</p>
                 </div>
             </section>
-
             <div id="footer-bottom">
                 <p>© Albert Antoine - Chomez Emil - Herreman Jérome - Shaban Khaled. Aucun droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
             </div>       
