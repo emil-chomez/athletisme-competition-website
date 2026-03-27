@@ -11,40 +11,27 @@
 <body>
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-    <!-- ===== HEADER ===== -->
-    <header class="site-header">
-        <div class="header-top">
-            <div class="container">
-                <span>10 - 12 Juillet 2026 | Stade de France, Saint-Denis</span>
-                <a href="contact.html">Nous contacter</a>
-            </div>
-        </div>
-        <div class="header-main">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Logo Paris Athletics 2026">
-                    <div class="logo-text">
-                        Paris Athletics
-                        <span>2026</span>
-                    </div>
-                </a>
-                <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="competitions.html" class="active">Compétitions</a></li>
-                        <li><a href="tarifs.html">Billetterie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+    <header>
+            <div id="in-header">
+                <div id="brand">
+                <a href="index.html"> 
+                    <img id="logo" src="images/logo.png" alt="logo"></a>
+                <div id="brand-text">
+                   <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+                </div>
+                </div>
+                <nav>
+                    <a class="nav" id="actif" href="index.html">Accueil</a>
+                    <a class="nav" href="competitions.html">Compétition</a>
+                    <a class="nav" href="tarifs.html">Billeterie</a>
+                    <a class="nav" href="contact.html">Contact</a>
                 </nav>
-                <form class="search-bar" role="search" aria-label="Rechercher sur le site">
-                    <label for="search-input" class="skip-link">Rechercher</label>
-                    <input type="search" id="search-input" placeholder="Rechercher..." aria-label="Rechercher sur le site">
-                    <button type="submit" aria-label="Lancer la recherche">&#128269;</button>
-                </form>
-                <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
-            </div>
-        </div>
-    </header>
+                <div id="searchbar">
+                    <input type="text" placeholder="Rechercher..." name="searchbar">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+            </div>    
+        </header>
 
     <!-- Fil d'Ariane -->
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -243,65 +230,60 @@
             </div>
         </section>
 
-        <!-- Newsletter -->
-        <section class="newsletter" aria-label="Inscription à la newsletter">
-            <div class="container">
-                <h3>Restez informé</h3>
-                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
-                <form class="newsletter-form" aria-label="Formulaire d'inscription newsletter">
-                    <label for="newsletter-email" class="skip-link">Adresse e-mail</label>
-                    <input type="email" id="newsletter-email" placeholder="Votre adresse e-mail" required aria-label="Votre adresse e-mail">
-                    <button type="submit">S'inscrire</button>
-                </form>
-            </div>
-        </section>
 
     </main>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Paris Athletics 2026</h4>
+    <footer>
+            <section id="newsletter">
+                <h3>Restez informé</h3>
+                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
+                <div>
+                    <label class="skip-link" for="newsletter-email">Addresse e-mail</label>
+                    <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
+                    <input type="submit" name="send" value="S'inscrire">
+                </div>
+            </section>
+            <section id="footer-grid">
+                <div class="footer-column">
+                    <h3>Paris Athletics 2026</h3>
                     <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde pour trois jours de compétitions exceptionnelles au Stade de France.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Twitter">X</a>
-                        <a href="#" aria-label="Instagram">ig</a>
-                        <a href="#" aria-label="YouTube">yt</a>
+                    <div id="footer-social">
+                        <a href="#" >f</a>
+                        <a href="#" >X</a>
+                        <a href="#" >ig</a>
+                        <a href="#" >yt</a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="competitions.html">Compétitions</a></li>
-                        <li><a href="tarifs.html">Billetterie</a></li>
+                        <li><a href="competition.html">compétitions</a></li>
+                        <li><a href="billeterie.html">Billeterie</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Épreuves populaires</h4>
+                <div class="footer-column">
+                    <h3>Épreuves populaires</h3>
                     <ul>
-                        <li><a href="pages/epreuve-100m.html">100 mètres</a></li>
-                        <li><a href="pages/epreuve-marathon.html">Marathon</a></li>
-                        <li><a href="pages/epreuve-perche.html">Saut à la perche</a></li>
-                        <li><a href="pages/epreuve-hauteur.html">Saut en hauteur</a></li>
+                        <li>100 mètres</li>
+                        <li>Marathon</li>
+                        <li>Saut à la perche</li>
+                        <li>Saut en hauteur</li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p>Stade de France<br>93200 Saint-Denis, France</p>
-                    <p class="mt-1">info@paris-athletics2026.fr</p>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Stade de France <br>93200 Saint-Denis, France</p>
+                    <p class="contact">info@paris-athletics2026.fr</p>
                     <p>+33 1 55 93 00 00</p>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Paris Athletics. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
-            </div>
-        </div>
-    </footer>
+            </section>
+            <div id="footer-bottom">
+                <p>© Albert Antoine - Chomez Emil - Herreman Jérome - Shaban Khaled. Aucun droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>       
+        </footer>
 
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
