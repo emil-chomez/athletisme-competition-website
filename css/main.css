@@ -2,6 +2,7 @@
 body {
     margin : 0 auto;
     background-color: white; /* ========== Modified by Khaled ==============*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* HEADER */
 header {  
