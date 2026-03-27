@@ -671,7 +671,8 @@ h1, .paytable{
 #map{
     display:flex;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 2%;
 }
 
 
@@ -713,6 +714,8 @@ h1, .paytable{
     margin-left: 30%;
     margin-right: 0%;
     font-size:large;
+    padding: 6px 12px;
+    border-radius: 20px;
 }
 
 #right_contact{
@@ -721,10 +724,11 @@ h1, .paytable{
     margin-left:0%;
     margin-right: 25%;
     margin-top: auto;
+    
 }
 
-#left_contact.input{
-    text-box: 50em;
+#left_contact.textarea{
+    font-size: large;
 }
 
 

@@ -61,8 +61,8 @@
                     <input type="text" name="phone_number" id="phone_number" required= """><br>
                     
                     
-                    <label for="sujet">Sujet</label>
-                    <select name="sujet" id="sujet">
+                    <label for="sujet">Sujet *</label>
+                    <select name="sujet" id="sujet" required="">
                         <optgroup label="Sujet">
                             <option value="sujet">-- Choisir un sujet --</option>
                             <option value="billetrie">Billetrie</option>
@@ -76,6 +76,10 @@
                     <br>
                     <label for="contact_message">Message *</label>
                     <textarea name="message"  id="message" rows="10" cols="50" required=""></textarea>
+                    <form action="redirect/#">
+                        <input id="button_contact" value="submit" type="submit">
+                    </form>
+                    
                 </form>
             </div> <!-------------------------------------- Contact form END -------------------------------------->
             
@@ -90,8 +94,12 @@
                 <div><p1>Métro 13 - Saint-Denis Porte de Paris</p1></div>
                 
                 <div class="cordination2">
-                    <img src="images/facebook-logo.png">
-                    <img src="images/X-logo.png">
+                    <a href="https://www.facebook.com/">
+                        <img src="images/facebook-logo.png">
+                    </a>
+                    <a href="https://x.com/X">
+                        <img src="images/X-logo.png">
+                    </a>
                 </div>
                 
             </div>
@@ -102,7 +110,7 @@
         </section>
 
         <div id="map">
-            <iframe id="google_map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.5215346776176!2d2.3574591766966857!3d48.92450749605104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ebadd2263bf%3A0x70c04f7109156311!2sStade%20de%20France!5e0!3m2!1sen!2sbe!4v1774425497276!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="google_map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.5215346776176!2d2.3574591766966857!3d48.92450749605104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ebadd2263bf%3A0x70c04f7109156311!2sStade%20de%20France!5e0!3m2!1sen!2sbe!4v1774425497276!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="allow" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 
