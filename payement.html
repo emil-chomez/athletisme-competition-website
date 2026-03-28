@@ -1,151 +1,186 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Page de Paiement</title>
-        <meta name="author" content="Khaled">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Paiement</title>
+    <meta name="author" content="Khaled">
 
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-
-
-    <body>
+</head>
 
 
-       <header>
-            <div id="in-header">
-                <div id="brand">
-                <a href="index.html"> 
+
+<body>
+
+
+    <header>
+        <div id="in-header">
+            <div id="brand">
+                <a href="index.html">
                     <img id="logo" src="images/logo.png" alt="logo"></a>
                 <div id="brand-text">
-                   <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+                    <a href="index.html">
+                        <h1>Paris Athletics<span>2026</span></h1>
+                    </a>
                 </div>
-                </div>
-                <nav>
-                    <a class="nav" href="index.html">Accueil</a>
-                    <a class="nav" href="competitions.html">Compétition</a>
-                    <a class="nav" id="actif"  href="tarifs.html">Billeterie</a>
-                    <a class="nav" href="contact.html">Contact</a>
-                </nav>
-                <div id="searchbar">
-                    <form>
-                        <input type="text" placeholder="Rechercher..." name="searchbar">
-                        <button><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>    
-        </header>
-
-
-
-        <main2 id="payement_form">
-            <h1>Paiement</h1>
-
-
-            <table id="payement_table">
-                <thead>
-                    <tr>
-                        <th>Ticket</th>
-                        <th>Prix total</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Nombre de tickets commandee</td> 
-                        <td>Total en Euro</td> 
-                    </tr>
-                </tbody>
-            </table>
-
-            
-
-            <form id="payement_form" action="redirect/submit-payment.html" method="POST">
-                <label style="margin-left: 1%;" for="payement_option">Choisissez le mode de paiement :</label>
-                <select name="payement_option" id="payement_option">
-                    <optgroup label="Systèmes de paiement en ligne">
-                        <option value="Paypal">PayPal</option>
-                        <option value="Mastercard">Mastercard</option>
-                        <option value="Visa">Visa</option>
-                    </optgroup>
-                </select>
-
-                <div id="logo_payement"> <!--css compris ! -->
-                    <div>
-                        <img src="images/paypal_logo.jpg" alt="Paypal" class="paylogo" width="50">
-                    </div>
-                    <div> 
-                        <img src="images/mastercard_logo.png" alt="Mastercard" class="paylogo" width="50">
-                    </div>
-                    <div>
-                        <img src="images/visa_logo.png" alt="Visa" class="paylogo" width="50">
-                    </div>
-                </div>
-
-                
-                <input id="pay_button" type="submit" value="Payer maintenant">
-
-                <nav id="return_button">
-                    <a href="index.html" class="button">Annuler</a>
-                </nav>
-            </form>
-        </main2>
-
-
-        <footer>
-            <section id="newsletter">
-                <h3>Restez informé</h3>
-                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
-                <form id="newsletter-form">
-                    <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
-                    <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
-                    <button type="submit">S'inscrire</button>
+            </div>
+            <nav>
+                <a class="nav" href="index.html">Accueil</a>
+                <a class="nav" href="competitions.html">Compétition</a>
+                <a class="nav" id="actif" href="tarifs.html">Billeterie</a>
+                <a class="nav" href="contact.html">Contact</a>
+            </nav>
+            <div id="searchbar">
+                <form>
+                    <input type="text" placeholder="Rechercher..." name="searchbar">
+                    <button><i class="fa fa-search"></i></button>
                 </form>
-            </section>
-            <section id="footer-grid">
-                <div class="footer-column">
-                    <h3>Paris Athletics 2026</h3>
-                    <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde pour trois jours de compétitions exceptionnelles au Stade de France.</p>
-                    <div id="footer-social">
-                        <a href="https://www.facebook.com/" target="_blank">f</a>
-                        <a href="https://x.com/X" target="_blank">X</a>
-                        <a href="https://instagram.com/" target="_blank">ig</a>
-                        <a href="https://youtube.com/" target="_blank">yt</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main2 id="payement_form">
+        <h1>Paiement</h1>
+
+
+
+
+        <table id="payement_table">
+            <thead>
+                <tr>
+                    <th>Ticket</th>
+                    <th>Prix total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Nombre de tickets commandee</td>
+                    <td>Total en Euro</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="reservation_form">
+            <form id="payement_form" action="redirect/submit-payment.html" method="POST">
+                <section>
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" required="" placeholder="Nom">
+
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" required="" id="prenom" placeholder="Prénom">
+
+                    <label for="email">Adresse e-mail *</label>
+                    <input type="email" required="" id="email" placeholder="Adresse e-mail">
+
+                    <label for="phone-number">Téléphone *</label>
+                    <input type="text" required="" id="phone-number" placeholder="Téléphone">
+
+                    <label name="formula">Formule *</label>
+                    <select name="formula" id="formula_form" required="">
+                        <optgroup label="Formula">
+                            <option value="">-- Choisir une formule --</option>
+                            <option value="ticket-journalier">Ticket Journalier - 35 €</option>
+                            <option value="pass-evenement">Pass Événement - 89 €"</option>
+                            <option value="pass-vip">Pass VIP - 249 €</option>
+                            
+                        </optgroup>
+
+                        </select>
+                            
+                            <label style="margin-left: 1%;" for="payement_option">Choisissez le mode de paiement *</label>
+                            <select required="" name="payement_option" id="payement_option" pla>
+                            <optgroup label="Systèmes de paiement en ligne" >
+                                <option value="Paypal">PayPal</option>
+                                <option value="Mastercard">Mastercard</option>
+                                <option value="Visa">Visa</option>
+                            </optgroup>
+                    </select>
+
+                    <div id="logo_payement"> 
+                        
+                        <img src="images/paypal_logo.jpg" alt="Paypal" class="paylogo" width="50">
+                
+                        <img src="images/mastercard_logo.png" alt="Mastercard" class="paylogo" width="50">
+                    
+                        <img src="images/visa_logo.png" alt="Visa" class="paylogo" width="50">
+                    
                     </div>
+                      
+                            
+                </section>
+                <div id="buttons">
+                    <input id="pay_button" type="submit" value="Payer maintenant">
+                    <a href="index.html" class="button">Annuler</a>
+                </div> 
+            </form>
+            
+        </div>
+
+
+        
+    </main2>
+
+
+    <footer>
+        <section id="newsletter">
+            <h3>Restez informé</h3>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
+            <form id="newsletter-form">
+                <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
+                <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter"
+                    required="">
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+        <section id="footer-grid">
+            <div class="footer-column">
+                <h3>Paris Athletics 2026</h3>
+                <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde pour trois
+                    jours de compétitions exceptionnelles au Stade de France.</p>
+                <div id="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank">f</a>
+                    <a href="https://x.com/X" target="_blank">X</a>
+                    <a href="https://instagram.com/" target="_blank">ig</a>
+                    <a href="https://youtube.com/" target="_blank">yt</a>
                 </div>
-                <div class="footer-column">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="competitions.html">compétitions</a></li>
-                        <li><a href="tarifs.html">Billeterie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Épreuves populaires</h3>
-                    <ul>
-                        <li><a href="pages/epreuve-100m.html"> 100 mètres</a></li>
-                        <li><a href="pages/epreuve-marathon.html"> Marathon</a></li>
-                        <li>Saut à la perche</li>
-                        <li>Saut en hauteur</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <p>Stade de France <br>93200 Saint-Denis, France</p>
-                    <p class="contact">info@paris-athletics2026.fr</p>
-                    <p>+33 1 55 93 00 00</p>
-                </div>
-            </section>
-            <div id="footer-bottom">
-                <p>© Albert Antoine - Chomez Emil - Herreman Jérome - Shaban Khaled. Aucun droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
-            </div>       
-        </footer>
-    </body>
+            </div>
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="competitions.html">compétitions</a></li>
+                    <li><a href="tarifs.html">Billeterie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Épreuves populaires</h3>
+                <ul>
+                    <li><a href="pages/epreuve-100m.html"> 100 mètres</a></li>
+                    <li><a href="pages/epreuve-marathon.html"> Marathon</a></li>
+                    <li>Saut à la perche</li>
+                    <li>Saut en hauteur</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Stade de France <br>93200 Saint-Denis, France</p>
+                <p class="contact">info@paris-athletics2026.fr</p>
+                <p>+33 1 55 93 00 00</p>
+            </div>
+        </section>
+        <div id="footer-bottom">
+            <p>© Albert Antoine - Chomez Emil - Herreman Jérome - Shaban Khaled. Aucun droits réservés. | <a
+                    href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+</body>
+
 </html>
