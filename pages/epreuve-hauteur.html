@@ -1,69 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fiche détaillée du saut en hauteur au Tournoi International d'Athlétisme Paris 2026.">
-    <title>Saut en hauteur - Paris Athletics 2026</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-
-    <header class="site-header">
-        <div class="header-top">
-            <div class="container">
-                <span>10 - 12 Juillet 2026 | Stade de France, Saint-Denis</span>
-                <a href="../contact.html">Nous contacter</a>
-            </div>
-        </div>
-        <div class="header-main">
-            <div class="container">
-                <a href="../index.html" class="logo">
-                    <img src="../images/logo.png" alt="Logo Paris Athletics 2026">
-                    <div class="logo-text">Paris Athletics <span>2026</span></div>
-                </a>
-                <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../competitions.html" class="active">Compétitions</a></li>
-                        <li><a href="../tarifs.html">Billetterie</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Compétition, hauteur">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" href="../images/logo.png">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <title>Saut en hauteur</title>
+        
+    </head>
+    <body>
+        <header>
+            <div id="in-header">
+                <div id="brand">
+                <a href="../index.html"> 
+                    <img id="logo" src="../images/logo.png" alt="logo"></a>
+                <div id="brand-text">
+                   <a href="../index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+                </div>
+                </div>
+                <nav>
+                    <a class="nav" href="../index.html">Accueil</a>
+                    <a class="nav" id="actif" href="../competitions.html">Compétition</a>
+                    <a class="nav" href="../tarifs.html">Billeterie</a>
+                    <a class="nav" href="../contact.html">Contact</a>
                 </nav>
-                <form class="search-bar" role="search" aria-label="Rechercher">
-                    <input type="search" placeholder="Rechercher..." aria-label="Rechercher sur le site">
-                    <button type="submit" aria-label="Lancer la recherche">&#128269;</button>
-                </form>
-                <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
-            </div>
-        </div>
-    </header>
-
-    <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <div class="container">
-            <ol>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../competitions.html">Compétitions</a></li>
-                <li aria-current="page">Saut en hauteur</li>
-            </ol>
-        </div>
-    </nav>
-
-    <main id="main-content">
-
-        <section class="detail-header">
-            <div class="container">
-                <span class="badge badge-accent">Sauts</span>
-                <h1>Saut en hauteur</h1>
-                <p class="mt-1">L'élégance du Fosbury Flop. Les athlètes repoussent les limites de la hauteur humaine.</p>
-            </div>
-        </section>
-
-        <section class="section">
+                <div id="searchbar">
+                    <form>
+                        <input type="text" placeholder="Rechercher..." name="searchbar">
+                        <button><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>    
+        </header>
+        <div id="fil-arianne"><!--https://developer.mozilla.org/fr/docs/Web/CSS/How_to/Layout_cookbook/Breadcrumb_navigation-->
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../competitions.html">Compétition</a></li>
+                    <li aria-current="page">Saut en Hauteur</li>
+                </ol>
+            </nav>
+        </div> 
+        <main>
+			<div class="detail-header">
+				<section>
+					<span class="sport-tag">Saut</span>
+					<h2>Saut en hauteur</h2>
+					<p>L'épreuve reine de l'athlétisme. La Course la plus rapide et le plus spectaculaire au monde.</p>
+                </section>
+			</div>
+            <section class="section">
             <div class="container">
                 <div class="detail-content">
+                
                     <div>
                         <img src="../images/high-jump.jpg" alt="Athlète effectuant un saut en hauteur avec la technique Fosbury" style="border-radius: var(--radius-lg); margin-bottom: 25px;">
 
@@ -94,10 +84,22 @@
                                         <td>Femmes</td>
                                     </tr>
                                     <tr>
+                                        <td>Qualifications</td>
+                                        <td>Vendredi 10/07</td>
+                                        <td>14:00</td>
+                                        <td>Hommes</td>
+                                    </tr>
+                                    <tr>
                                         <td><strong>Finale</strong></td>
                                         <td><strong>Samedi 11/07</strong></td>
                                         <td><strong>14:00</strong></td>
                                         <td><strong>Femmes</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Finale</strong></td>
+                                        <td><strong>Samedi 11/07</strong></td>
+                                        <td><strong>17:00</strong></td>
+                                        <td><strong>Hommes</strong></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -116,13 +118,13 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Record du monde (H)</td>
+                                        <td>Record du monde (Hommes)</td>
                                         <td>Javier Sotomayor (CUB)</td>
                                         <td class="rank-gold">2.45 m</td>
                                         <td>1993</td>
                                     </tr>
                                     <tr>
-                                        <td>Record du monde (F)</td>
+                                        <td>Record du monde (Femmes)</td>
                                         <td>Stefka Kostadinova (BUL)</td>
                                         <td class="rank-gold">2.09 m</td>
                                         <td>1987</td>
@@ -154,7 +156,7 @@
                             <dt>Catégories</dt>
                             <dd>Hommes &amp; Femmes</dd>
                             <dt>Phases</dt>
-                            <dd>Qualifications &rarr; Finale</dd>
+                            <dd>Qualifications → Finale</dd>
                         </dl>
 
                         <h3 class="mt-3">Favoris</h3>
@@ -176,58 +178,56 @@
                 </div>
             </div>
         </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Paris Athletics 2026</h4>
-                    <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Twitter">X</a>
-                        <a href="#" aria-label="Instagram">ig</a>
-                        <a href="#" aria-label="YouTube">yt</a>
+		</main>
+        <footer>
+            <section id="newsletter">
+                <h3>Restez informé</h3>
+                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
+                <form id="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
+                    <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </section>
+            <section id="footer-grid">
+                <div class="footer-column">
+                    <h3>Paris Athletics 2026</h3>
+                    <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde pour trois jours de compétitions exceptionnelles au Stade de France.</p>
+                    <div id="footer-social">
+                        <a href="https://www.facebook.com/" target="_blank">f</a>
+                        <a href="https://x.com/X" target="_blank">X</a>
+                        <a href="https://instagram.com/" target="_blank">ig</a>
+                        <a href="https://youtube.com/" target="_blank">yt</a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
                     <ul>
                         <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../competitions.html">Compétitions</a></li>
-                        <li><a href="../tarifs.html">Billetterie</a></li>
+                        <li><a href="../competitions.html">compétitions</a></li>
+                        <li><a href="../tarifs.html">Billeterie</a></li>
                         <li><a href="../contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Épreuves populaires</h4>
+                <div class="footer-column">
+                    <h3>Épreuves populaires</h3>
                     <ul>
-                        <li><a href="epreuve-100m.html">100 mètres</a></li>
-                        <li><a href="epreuve-marathon.html">Marathon</a></li>
+                        <li><a href="epreuve-100m.html"> 100 mètres</a></li>
+                        <li><a href="epreuve-marathon.html"> Marathon</a></li>
                         <li><a href="epreuve-perche.html">Saut à la perche</a></li>
-                        <li><a href="epreuve-hauteur.html">Saut en hauteur</a></li>
+                        <li>Saut en hauteur</li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p>Stade de France<br>93200 Saint-Denis, France</p>
-                    <p class="mt-1">info@paris-athletics2026.fr</p>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Stade de France <br>93200 Saint-Denis, France</p>
+                    <p class="contact">info@paris-athletics2026.fr</p>
+                    <p>+33 1 55 93 00 00</p>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Paris Athletics. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            var nav = document.getElementById('main-nav');
-            nav.classList.toggle('active');
-            this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
-        });
-    </script>
-</body>
+            </section>
+            <div id="footer-bottom">
+                <p>© Albert Antoine - Chomez Emil - Herreman Jérome - Shaban Khaled. Aucun droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>       
+        </footer>
+    </body>
 </html>
