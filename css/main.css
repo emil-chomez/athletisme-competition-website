@@ -749,7 +749,10 @@ td {
     grid-template-columns: 2fr 1fr;
     column-gap: 15px;
 }
-
+.epreuve-left h3{
+    font-size: 1.8em;
+    color: #0a115e;
+}
 .main-img {
     width: 100%;
     height: auto;
