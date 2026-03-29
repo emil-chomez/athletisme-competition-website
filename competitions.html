@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Découvrez toutes les épreuves du Tournoi International d'Athlétisme Paris 2026 : sprints, courses de fond, sauts et lancers.">
     <title>Compétitions &amp; Épreuves - Paris Athletics 2026</title>
     <link rel="stylesheet" href="css/main.css">
@@ -11,28 +10,28 @@
 </head>
 <body>
     <header>
-            <div id="in-header">
-                <div id="brand">
-                <a href="index.html"> 
-                    <img id="logo" src="images/logo.png" alt="logo"></a>
-                <div id="brand-text">
-                   <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
-                </div>
-                </div>
-                <nav>
-                    <a class="nav" href="index.html">Accueil</a>
-                    <a class="nav" id="actif" href="competitions.html">Compétition</a>
-                    <a class="nav" href="tarifs.html">Billeterie</a>
-                    <a class="nav" href="contact.html">Contact</a>
-                </nav>
-                <div id="searchbar">
-                    <form>
-                        <input type="text" placeholder="Rechercher..." name="searchbar">
-                        <button><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>    
-        </header>
+        <div id="in-header">
+            <div id="brand">
+            <a href="index.html"> 
+                <img id="logo" src="images/logo.png" alt="logo"></a>
+            <div id="brand-text">
+                <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+            </div>
+            </div>
+            <nav>
+                <a class="nav" href="index.html">Accueil</a>
+                <a class="nav" id="actif" href="competitions.html">Compétition</a>
+                <a class="nav" href="tarifs.html">Billeterie</a>
+                <a class="nav" href="contact.html">Contact</a>
+            </nav>
+            <div id="searchbar">
+                <form>
+                    <input type="text" placeholder="Rechercher..." name="searchbar">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>    
+    </header>
 
     <!-- Fil d'Ariane -->
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -44,20 +43,18 @@
         </div>
     </nav>
 
-    <main id="main-content">
+    <main>
 
-        <!-- En-tête de page -->
-        <section class="detail-header">
-            <div class="container">
-                <h1>Compétitions &amp; Épreuves</h1>
+        <div class="detail-header">
+            <section>
+                <h2>Compétitions &amp; Épreuves</h2>
                 <p class="mt-1">Découvrez l'ensemble des disciplines et épreuves du Tournoi International d'Athlétisme Paris 2026.</p>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- Filtres -->
-        <section class="section" aria-label="Filtrer les épreuves">
-            <div class="container">
-                <div class="filters">
+        <section class="competition">
+            <h3 class="section-title">Nos épreuves</h3>
+               <div id="filters">
                     <button class="filter-btn active">Toutes</button>
                     <button class="filter-btn">Courses</button>
                     <button class="filter-btn">Sauts</button>
@@ -65,242 +62,279 @@
                     <button class="filter-btn">Relais</button>
                 </div>
 
-                <!-- Catalogue par catégories -->
-                <div class="categories-list">
-                    <!-- Courses de vitesse -->
+                <div class="category-grid">
                     <div class="category-group">
                         <h3>Courses de vitesse</h3>
                         <ul>
-                            <li><a href="pages/epreuve-100m.html">100 mètres <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="pages/epreuve-200m.html">200 mètres <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="pages/epreuve-400m.html">400 mètres <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="pages/epreuve-100m_haies.html">100m Haies  <span class="badge badge-primary">Femmes</span></a></li>
-                            <li><a href="pages/epreuve-110m_haies.html">110m Haies <span class="badge badge-primary">Hommes</span></a></li>
-                            <li><a href="pages/epreuve-400m_haies.html">400m Haies <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="pages/epreuve-100m.html">100 mètres <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="pages/epreuve-200m.html">200 mètres <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="pages/epreuve-400m.html">400 mètres <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="pages/epreuve-100m_haies.html">100m Haies  <span class="fiche-tag">Femmes</span></a></li>
+                            <li><a href="pages/epreuve-110m_haies.html">110m Haies <span class="fiche-tag">Hommes</span></a></li>
+                            <li><a href="pages/epreuve-400m_haies.html">400m Haies <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
                         </ul>
                     </div>
 
-                    <!-- Courses de fond -->
                     <div class="category-group">
                         <h3>Courses de fond &amp; demi-fond</h3>
                         <ul>
-                            <li><a href="#">800 mètres lollol<span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">1500 mètres <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">5000 mètres <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">10 000 mètres <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="pages/epreuve-marathon.html">Marathon <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">800 mètres <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">1500 mètres <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">5000 mètres <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">10 000 mètres <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="pages/epreuve-marathon.html">Marathon <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
                         </ul>
                     </div>
 
-                    <!-- Sauts -->
                     <div class="category-group">
                         <h3>Sauts</h3>
                         <ul>
-                            <li><a href="pages/epreuve-hauteur.html">Saut en hauteur <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="pages/epreuve-perche.html">Saut à la perche <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">Saut en longueur <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">Triple saut <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="pages/epreuve-hauteur.html">Saut en hauteur <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="pages/epreuve-perche.html">Saut à la perche <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Saut en longueur <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Triple saut <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
                         </ul>
                     </div>
 
-                    <!-- Lancers -->
                     <div class="category-group">
                         <h3>Lancers</h3>
                         <ul>
-                            <li><a href="#">Lancer du poids <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">Lancer du disque <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">Lancer du javelot <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">Lancer du marteau <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Lancer du poids <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Lancer du disque <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Lancer du javelot <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Lancer du marteau <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
                         </ul>
                     </div>
 
-                    <!-- Relais -->
                     <div class="category-group">
                         <h3>Relais</h3>
                         <ul>
-                            <li><a href="#">Relais 4x100m <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
-                            <li><a href="#">Relais 4x400m <span class="badge badge-accent">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Relais 4x100m <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
+                            <li><a href="#">Relais 4x400m <span class="sport-tag">Hommes &amp; Femmes</span></a></li>
                             <li><a href="#">Relais 4x400m mixte <span class="badge badge-success">Mixte</span></a></li>
                         </ul>
                     </div>
 
-                    <!-- Épreuves combinées -->
                     <div class="category-group">
                         <h3>Épreuves combinées</h3>
                         <ul>
-                            <li><a href="#">Décathlon <span class="badge badge-primary">Hommes</span></a></li>
-                            <li><a href="#">Heptathlon <span class="badge badge-primary">Femmes</span></a></li>
+                            <li><a href="#">Décathlon <span class="fiche-tag">Hommes</span></a></li>
+                            <li><a href="#">Heptathlon <span class="fiche-tag">Femmes</span></a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
         </section>
 
-        <!-- Épreuves en vedette - Cartes -->
-        <section class="section bg-light" aria-label="Épreuves en vedette">
-            <div class="container">
-                <h2 class="section-title">Épreuves en vedette</h2>
-                <div class="cards-grid">
-                    <article class="card">
-                        <img src="images/sprint-action.jpg" alt="Sprint 100 mètres en compétition" class="card-img">
-                        <div class="card-body">
-                            <span class="card-tag">Sprint</span>
-                            <h3>100 mètres</h3>
-                            <p>L'épreuve la plus rapide et la plus spectaculaire de l'athlétisme. Moins de 10 secondes pour entrer dans l'histoire.</p>
-                            <a href="pages/epreuve-100m.html" class="btn btn-sm btn-outline">Détails</a>
-                        </div>
+        <section class="competition">
+                <h3 class="section-title">Épreuves en vedette</h2>
+                <div class="sport-grid">
+                    <div class="fiche-sport">
+                        <img src="images/sprint-action.jpg" alt="Sprint 100 mètres en compétition" class="fiche-img">
+                        <article class="fiche-content">
+                            <span class="fiche-tag">Sprint</span>
+                            <h4 class="fiche-title">100 mètres</h4>
+                            <p class="fiche-text">L'épreuve la plus rapide et la plus spectaculaire de l'athlétisme. Moins de 10 secondes pour entrer dans l'histoire.</p>
+                            <a href="pages/epreuve-100m.html" class="fiche-btn">Voir les détails</a>
+                        </article>
+                    </div>
+                    <div class="fiche-sport">
+                        <img src="images/marathon.jpg" alt="Coureurs de marathon" class="fiche-img">
+                        <article class="fiche-content">
+                            <span class="fiche-tag">Endurance</span>
+                            <h4 class="fiche-title">Marathon</h4>
+                            <p class="fiche-text">42,195 km de course à travers Paris. L'épreuve ultime d'endurance et de mental.</p>
+                            <a href="pages/epreuve-marathon.html" class="fiche-btn">Voir les détails</a>
+                        </article>
+                    </div>
+                    <div class="fiche-sport">
+                        <img src="images/pole-vault.jpg" alt="Saut à la perche" class="fiche-img">
+                        <article class="fiche-content">
+                            <span class="fiche-tag">Sauts</span>
+                            <h4 class="fiche-title">Saut à la perche</h4>
+                            <p class="fiche-text">Technique, vitesse et puissance combinées pour défier la gravité et franchir des hauteurs impressionnantes.</p>
+                            <a href="pages/epreuve-perche.html" class="fiche-btn">Voir les détails</a>
+                        </article>
+                    </div>
+                    <div class="fiche-sport">
+                        <img src="images/high-jump.jpg" alt="Saut en hauteur" class="fiche-img">
+                        <article class="fiche-content">
+                            <span class="fiche-tag">Sauts</span>
+                            <h4 class="fiche-title">Saut en hauteur</h4>
+                            <p class="fiche-text">L'élégance du Fosbury Flop. Les athlètes repoussent les limites de la hauteur humaine.</p>
+                            <a href="pages/epreuve-hauteur.html" class="fiche-btn">Voir les détails</a>
+                        </article>
+                    </div>
+                </div>
+        </section>
+
+        <section class="competition">
+            <h3 class="section-title">Équipes participantes</h3>
+            <div class="sport-grid">
+                <div class="fiche-sport">
+                    <article class="fiche-content text-centre">
+                        <h4 class="fiche-title">Équipe de France</h4>
+                        <p class="fiche-text">La nation hôte, avec une délégation de 45 athlètes couvrant toutes les disciplines.</p>
+                        <a href="pages/equipe-france.html" class="fiche-btn">Voir l'équipe</a>
                     </article>
-                    <article class="card">
-                        <img src="images/marathon.jpg" alt="Coureurs de marathon" class="card-img">
-                        <div class="card-body">
-                            <span class="card-tag">Endurance</span>
-                            <h3>Marathon</h3>
-                            <p>42,195 km de course à travers Paris. L'épreuve ultime d'endurance et de mental.</p>
-                            <a href="pages/epreuve-marathon.html" class="btn btn-sm btn-outline">Détails</a>
-                        </div>
+                </div>
+                <div class="fiche-sport">
+                    <article class="fiche-content text-centre">
+                        <h4 class="fiche-title">Équipe de Jamaïque</h4>
+                        <p class="fiche-text">Les rois du sprint, avec une équipe redoutable sur les épreuves de vitesse.</p>
+                        <a href="pages/equipe-jamaique.html" class="fiche-btn">Voir l'équipe</a>
                     </article>
-                    <article class="card">
-                        <img src="images/pole-vault.jpg" alt="Saut à la perche" class="card-img">
-                        <div class="card-body">
-                            <span class="card-tag">Sauts</span>
-                            <h3>Saut à la perche</h3>
-                            <p>Technique, vitesse et puissance combinées pour défier la gravité et franchir des hauteurs impressionnantes.</p>
-                            <a href="pages/epreuve-perche.html" class="btn btn-sm btn-outline">Détails</a>
-                        </div>
+                </div>
+                <div class="fiche-sport">
+                    <article class="fiche-content text-centre">
+                        <h4 class="fiche-title">Équipe des États-Unis</h4>
+                        <p class="fiche-text">Une puissance athlétique complète, compétitive dans chaque discipline.</p>
+                        <a href="#" class="fiche-btn">Voir l'équipe</a>
                     </article>
-                    <article class="card">
-                        <img src="images/high-jump.jpg" alt="Saut en hauteur" class="card-img">
-                        <div class="card-body">
-                            <span class="card-tag">Sauts</span>
-                            <h3>Saut en hauteur</h3>
-                            <p>L'élégance du Fosbury Flop. Les athlètes repoussent les limites de la hauteur humaine.</p>
-                            <a href="pages/epreuve-hauteur.html" class="btn btn-sm btn-outline">Détails</a>
-                        </div>
+                </div>
+                <div class="fiche-sport">
+                    <article class="fiche-content text-centre">
+                        <h4 class="fiche-title">Équipe du Kenya</h4>
+                        <p class="fiche-text">Les maîtres incontestés des courses de fond et du marathon.</p>
+                        <a href="#" class="fiche-btn">Voir l'équipe</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Équipes participantes -->
-        <section class="section" aria-label="Équipes participantes">
-            <div class="container">
-                <h2 class="section-title">Équipes participantes</h2>
-                <div class="cards-grid">
-                    <article class="card">
-                        <div class="card-body text-center">
-                            <h3>Équipe de France</h3>
-                            <p>La nation hôte, avec une délégation de 45 athlètes couvrant toutes les disciplines.</p>
-                            <a href="pages/equipe-france.html" class="btn btn-sm btn-outline">Voir l'équipe</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-body text-center">
-                            <h3>Équipe de Jamaïque</h3>
-                            <p>Les rois du sprint, avec une équipe redoutable sur les épreuves de vitesse.</p>
-                            <a href="pages/equipe-jamaique.html" class="btn btn-sm btn-outline">Voir l'équipe</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-body text-center">
-                            <h3>Équipe des États-Unis</h3>
-                            <p>Une puissance athlétique complète, compétitive dans chaque discipline.</p>
-                            <a href="#" class="btn btn-sm btn-outline">Voir l'équipe</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-body text-center">
-                            <h3>Équipe du Kenya</h3>
-                            <p>Les maîtres incontestés des courses de fond et du marathon.</p>
-                            <a href="#" class="btn btn-sm btn-outline">Voir l'équipe</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
 
-        <!-- Pagination -->
-        <section class="section bg-light" aria-label="Pagination">
-            <div class="container">
-                <nav class="pagination" aria-label="Pagination des compétitions">
-                    <span class="disabled" aria-label="Page précédente">&laquo;</span>
-                    <span class="active" aria-current="page">1</span>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#" aria-label="Page suivante">&raquo;</a>
-                </nav>
-            </div>
-        </section>
+        
+            <nav class="pagination">
+                <a href="#" class="disabled">&laquo;</a>
+                <a href="#" data-page="1" class="active">1</a>
+                <a href="#" data-page="2">2</a>
+                <a href="#" data-page="3">3</a>
+                <a href="#" aria-label="Page suivante">&raquo;</a>
+            </nav>
+        
 
 
     </main>
 
-    <!-- ===== FOOTER ===== -->
     <footer>
-            <section id="newsletter">
-                <h3>Restez informé</h3>
-                <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
-                <form id="newsletter-form">
-                    <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
-                    <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
-                    <button type="submit">S'inscrire</button>
-                </form>
-            </section>
-            <section id="footer-grid">
-                <div class="footer-column">
-                    <h3>Paris Athletics 2026</h3>
-                    <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde pour trois jours de compétitions exceptionnelles au Stade de France.</p>
-                    <div id="footer-social">
-                        <a href="https://www.facebook.com/" target="_blank">f</a>
-                        <a href="https://x.com/X" target="_blank">X</a>
-                        <a href="https://instagram.com/" target="_blank">ig</a>
-                        <a href="https://youtube.com/" target="_blank">yt</a>
-                    </div>
+        <section id="newsletter">
+            <h3>Restez informé</h3>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>
+            <form id="newsletter-form">
+                <label for="newsletter-email" class="sr-only">Addresse e-mail</label>
+                <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" name="newsletter" required="">
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+        <section id="footer-grid">
+            <div class="footer-column">
+                <h3>Paris Athletics 2026</h3>
+                <p>Le Tournoi International d'Athlétisme de Paris réunit les meilleurs athlètes du monde pour trois jours de compétitions exceptionnelles au Stade de France.</p>
+                <div id="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank">f</a>
+                    <a href="https://x.com/X" target="_blank">X</a>
+                    <a href="https://instagram.com/" target="_blank">ig</a>
+                    <a href="https://youtube.com/" target="_blank">yt</a>
                 </div>
-                <div class="footer-column">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="competitions.html">compétitions</a></li>
-                        <li><a href="tarifs.html">Billeterie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Épreuves populaires</h3>
-                    <ul>
-                        <li><a href="pages/epreuve-100m.html"> 100 mètres</a></li>
-                        <li><a href="pages/epreuve-marathon.html"> Marathon</a></li>
-                        <li><a href="pages/epreuve-perche.html">Saut à la perche</a></li>
-                        <li><a href="pages/epreuve-hauteur.html">Saut en hauteur</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <p>Stade de France <br>93200 Saint-Denis, France</p>
-                    <p class="contact">info@paris-athletics2026.fr</p>
-                    <p>+33 1 55 93 00 00</p>
-                </div>
-            </section>
-            <div id="footer-bottom">
-                <p>© Albert Antoine - Chomez Emil - Herreman Jérome - Shaban Khaled. Aucun droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
-            </div>       
-        </footer>
-
+            </div>
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="competitions.html">Compétition</a></li>
+                    <li><a href="tarifs.html">Billeterie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Épreuves populaires</h3>
+                <ul>
+                    <li><a href="pages/epreuve-100m.html"> 100 mètres</a></li>
+                    <li><a href="pages/epreuve-marathon.html"> Marathon</a></li>
+                    <li><a href="pages/epreuve-perche.html">Saut à la perche</a></li>
+                    <li><a href="pages/epreuve-hauteur.html">Saut en hauteur</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Stade de France <br>93200 Saint-Denis, France</p>
+                <p class="contact">info@paris-athletics2026.fr</p>
+                <p>+33 1 55 93 00 00</p>
+            </div>
+        </section>
+        <div id="footer-bottom">
+            <p>© Albert Antoine - Chomez Emil - Herreman Jérome - Shaban Khaled. Aucun droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>       
+    </footer>
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            var nav = document.getElementById('main-nav');
-            nav.classList.toggle('active');
-            var expanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !expanded);
-        });
+        //FILTRE
+            // Get the container element
+            var btnContainer = document.getElementById("filters");
 
-        // Filtres interactifs (simulation)
-        document.querySelectorAll('.filter-btn').forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
-                this.classList.add('active');
+            // Get all buttons with class="btn" inside the container
+            var btns = btnContainer.getElementsByClassName("filter-btn");
+
+            // Loop through the buttons and add the active class to the current/clicked button
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
             });
-        });
+            } 
+        //PAGINATION
+            let currentPage = 1;
+            const totalPages = 3;
+
+            const prev = document.querySelector(".pagination .disabled, .pagination [aria-label='Page précédente']");
+            const next = document.querySelector(".pagination [aria-label='Page suivante']");
+            const pageLinks = document.querySelectorAll(".pagination [data-page]");
+
+            function goToPage(page) {
+                // Retirer la classe active de la page courante
+                document.querySelector(".pagination [data-page].active")
+                    .classList.remove("active");
+
+                // Ajouter active à la nouvelle page
+                document.querySelector(`.pagination [data-page="${page}"]`)
+                    .classList.add("active");
+
+                currentPage = page;
+                updateArrows();
+            }
+
+            function updateArrows() {
+                if (currentPage === 1) {
+                    prev.classList.add("disabled");
+                } else {
+                    prev.classList.remove("disabled");
+                }
+
+                if (currentPage === totalPages) {
+                    next.classList.add("disabled");
+                } else {
+                    next.classList.remove("disabled");
+                }
+            }
+
+            // Clic sur les numéros
+            pageLinks.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    goToPage(parseInt(this.dataset.page));
+                });
+            });
+
+            // Flèches
+            prev.addEventListener("click", function(e) {
+                
+                if (currentPage > 1) goToPage(currentPage - 1);
+            });
+
+            next.addEventListener("click", function(e) {
+                
+                if (currentPage < totalPages) goToPage(currentPage + 1);
+            });
+
     </script>
 </body>
+
 </html>

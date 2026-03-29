@@ -103,10 +103,6 @@ header a.nav {
 }
 
 /*Fil d'arianne*/
-#fil-arianne {
-    width: 100%;
-    padding: 5px 0;
-}
 
 nav.breadcrumb {
     max-width: 1200px;
@@ -359,7 +355,7 @@ section.accueil {
     margin: 0 auto;
 }
 
-.accueil h3.section-title {
+h3.section-title {
     font-size: 2em;
     color: #0a115e;
     padding-bottom: 20px;
@@ -367,7 +363,7 @@ section.accueil {
     text-align: center;
 }
 
-.accueil h3.section-title::after {
+h3.section-title::after {
     content: '';
     display: block;
     width: 60px;
@@ -472,7 +468,7 @@ p.hl-dc {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     ;
-    column-gap: 50px;
+    gap:25px;
 }
 
 .fiche-sport {
@@ -518,7 +514,7 @@ p.hl-dc {
     border: 2px solid #0a115e;
     text-decoration: none;
     color: #0a115e;
-    padding: 8px 15px;
+    padding: 6px 12px;
     border-radius: 30px;
 }
 
@@ -706,9 +702,87 @@ td {
 }
 
 
+/*PAGE COMPETITION*/
+section.competition{
+    display:flex;
+    max-width: 1000px;
+    margin:0 auto;
+    flex-direction: column;
+    width: 100%;
+}
+#filters {
+    align-self: center;
+    padding: 25px;
+}
+.filter-btn{
+    background-color:transparent;
+    border-radius: 12px;
+    padding: 4px 8px;
+    border:2px solid #0a115e;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.filter-btn:hover, .filter-btn.active{
+    color: aliceblue;
+    background-color: #0a115e;
+}
+.category-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap:20px;
+    width:100%;
+}
 
-
-
+.category-group h3{
+    background-color: #0a115e;
+    color: aliceblue;
+    border-radius: 10px 10px 0px 0px;
+    padding:10px 75px 10px 20px;
+    margin:0;
+    font-size:1.3em
+}
+.category-group ul{
+    list-style: none;
+    padding:0;
+    border: 1px solid lightgrey;
+    border-top:#0a115e;
+    border-radius: 0 0 10px 10px;
+    margin:0;
+}
+.category-group li{
+    padding:10px 10px 10px 20px;
+    border-bottom:1px solid lightgrey;
+}
+.category-group li:last-child{
+    border-bottom:none;
+}
+.category-group a{
+    text-decoration: none;
+    color:#0a115e;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+.category-group a::after{
+    content:"\2192";
+    color: #0a115e;
+}
+.pagination{
+    text-align: center;
+    padding: 25px;
+}
+.pagination a {
+    border:1px solid rgb(220, 218, 218);
+    text-decoration: none;
+    color:black;
+    border-radius: 4px;
+    padding:4px 10px;
+}
+.pagination .active{
+    background-color: #0a115e;
+    border-color: #0a115e;
+    color: aliceblue;
+}
 /*PAGES SPORT*/
 
 
