@@ -20,6 +20,8 @@
 
     <body>
 
+        
+
         <header>
             <div id="in-header">
                 <div id="brand">
@@ -43,6 +45,8 @@
                 </div>
             </div>    
         </header>
+
+        
             <div id="fil-arianne"><!--https://developer.mozilla.org/fr/docs/Web/CSS/How_to/Layout_cookbook/Breadcrumb_navigation-->
                 <nav aria-label="Breadcrumb" class="breadcrumb">
                     <ol>
@@ -52,23 +56,32 @@
                 </nav>
             </div>
 
+            <div class="detail-header">
+            <section>
+                <h2>Contactez-nous</h2>
+                <p class="mt-1">Une question, une demande d'informations ou une suggestion ? N'hésitez pas à nous écrire.</p>
+            </section>
+        </div>
+
+            
+
 
                             <!--------------------------------------- Contact Form ----------------------->
         <section id="contact-grid">
             <div class = "formulaire">
-                <h2 id="">Envoyez-nous un message</h2>
+                <h3 id="">Envoyez-nous un message</h3>
                 <form id="left_contact">
                     <label for ="nom">Nom *</label>
-                    <input type="text" id="nom" name="nom" required="" placeholder="Nom"> <br>
+                    <input type="text" id="nom" name="nom" required="" placeholder="Nom"> 
 
                     <label for="prenom">Prénom *</label>
-                    <input type="text" id="prenom" name="prenom" required="" placeholder="Prénom"><br>
+                    <input type="text" id="prenom" name="prenom" required="" placeholder="Prénom">
 
                     <label for="adresse e-mail">Adresse e-mail *</label>
-                    <input type="email" id="email" name="email" required="" placeholder="Adresse e-mail"><br>
+                    <input type="email" id="email" name="email" required="" placeholder="Adresse e-mail">
 
                     <label for = "phone_number">Téléphone *</label>
-                    <input type="text" name="phone_number" id="phone_number" required= "" placeholder="Téléphone"><br>
+                    <input type="text" name="phone_number" id="phone_number" required= "" placeholder="Téléphone">
                     
                     
                     <label for="sujet">Sujet *</label>
@@ -86,15 +99,15 @@
                     <br>
                     <label for="contact_message">Message *</label>
                     <textarea name="message"  id="message" rows="10" cols="50" required=""></textarea>
-                    <form action="redirect/#">
-                        <input id="button_contact" value="submit" type="submit">
+                    <form action="#">
+                        <input id="button_contact" value="Envoyer" type="submit">
                     </form>
                     
                 </form>
             </div> <!-------------------------------------- Contact form END -------------------------------------->
             
             <div id="right_contact" class="cordination">
-                <h2>Nos coordonnées</h2>
+                <h4>Nos coordonnées</h4>
                 <div><img src="images/map_pin.png" width="40" height="40"> <h2>Adresse</h2> <p>Stade de France<br>93200 Saint-Denis, France</p></div>
                 <div><img width="40" height="40" src="https://img.icons8.com/?size=100&id=bqI4gOgp4z1f&format=png&color=000000" alt="email-open"/> <h2>E-mail</h2> info@paris-athletics2026.fr</div>
                 <div><img src="images/phone.png" width="40" height="40"> <h2>Téléphone</h2> <br><p1>+33 1 55 93 00 00 <br>Lun - Ven : 9h00 - 18h00</p1></div>
@@ -121,8 +134,7 @@
                 
             </div>
 
-            <div class="suivez-nous"></div>
-            
+                       
 
         </section>
 
