@@ -202,7 +202,7 @@ footer a {
 
 }
 
-#newsletter button {
+#form button {
     padding: 9px 18px;
     border-radius: 20px;
     background-color: rgb(255, 230, 0);
@@ -355,7 +355,7 @@ p.banniere-date {
 
 
 
-h3.section-title {
+.section-title {
     font-size: 2em;
     color: #0a115e;
     padding-bottom: 20px;
@@ -363,7 +363,7 @@ h3.section-title {
     text-align: center;
 }
 
-h3.section-title::after {
+.section-title::after {
     content: '';
     display: block;
     width: 60px;
@@ -1067,6 +1067,7 @@ section.competition{
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    
 }
 
 #buttons {
@@ -1189,4 +1190,64 @@ section.competition{
     transform: rotate(45deg);
     font-size: 0.9em;
     font-weight: 700;
+}
+
+
+/*FORMULAIRE-bis*/
+
+section.payement {
+    margin:0 auto;
+    max-width:700px;
+}
+.form-ligne {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+.form-element {
+    margin-bottom: 20px;
+}
+.form-element label {
+    display:block;
+}
+.form-check {
+    display: flex;
+   align-items: center;
+   gap:20px;
+
+}
+.form-element select, .form-element textarea, .form-element input{
+    width: 100%;
+    padding:8px 12px;
+    border-radius:5px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+#logo_payement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+#form-btn{
+    margin:25px 0;
+    display : flex;
+    gap:25px;
+    justify-content: center;
+}
+#pay-btn {
+    padding: 9px 18px;
+    border-radius: 20px;
+    background-color: rgb(255, 230, 0);
+    border: none;
+    cursor: pointer;
+    font-size:1em;
+}
+#cancel-btn {
+    padding: 9px 18px;
+    border-radius: 20px;
+    border: 1px solid #0a115e;
+    cursor: pointer;
+    text-decoration: none;
+    color:#1a227c
 }
