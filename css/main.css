@@ -1098,3 +1098,96 @@ section.competition{
 
 
 /* =======================Design of all pages KHALED FIN ==========================*/
+
+
+/* ============== STYLES POUR LA PAGE TARIFS ================== */
+
+
+.section-padding {
+    padding: 40px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center; 
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-header h3 {
+    color: #1a227c;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.pricing-price {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #1a227c;
+    margin: 10px 0;
+}
+
+.pricing-price span {
+    font-size: 0.5em;
+    font-weight: 400;
+    color: #666;
+}
+
+.pricing-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.pricing-body li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+
+.pricing-body li::before {
+    content: '✔';
+    color: #4CAF50; 
+    position: absolute;
+    left: 0;
+}
+
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    border: 3px solid yellow;
+}
+
+
+.pricing-card.featured::before {
+    content: "Populaire";
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background-color: yellow;
+    color: #1a227c;
+    padding: 5px 30px;
+    transform: rotate(45deg);
+    font-size: 0.9em;
+    font-weight: 700;
+}
