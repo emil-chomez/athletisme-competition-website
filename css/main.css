@@ -159,6 +159,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 section.section {
     display: flex;
@@ -447,6 +448,7 @@ div.detail-grid {
 
 .detail-content div {
     padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 .btn-outline {
@@ -495,6 +497,7 @@ div.detail-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     ;
     gap:25px;
+    padding:0 25px;
 }
 
 .fiche-sport {
@@ -574,6 +577,9 @@ div.detail-grid {
     border: none;
     border-radius: 30px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 16/9;
+    width: 90%;
+    height: auto;
 }
 
 .galerie {
@@ -1320,6 +1326,9 @@ section.payement {
 @media (max-width: 768px) {
     
     
+    html{
+        font-size:14px;
+    }
     
     #in-header {
         flex-direction: column;
@@ -1376,7 +1385,77 @@ section.payement {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .higlight-grid{
+    #banniere-content {
+        min-height: 350px;
+        padding:30px 20px;
+    }
+    #banniere-content h2{
+        font-size: 1.6em;
+    }
+    #banniere-content p{
+        font-size:0.9em;
+    }
+    #banniere-boutons{
+        font-size:1em;
+        flex-direction:column;
+        align-items:center;
+    }
+    .section{
+        padding-left:15px;
+        padding-right:15px;
+    }
+     .higlight-grid{
         row-gap:20px;
     }
+    .detail-grid, #review-grid{
+        grid-template-columns: auto !important;
+    }
+    .detail-content{
+        padding-right: 0;
+        text-align: center;
+    }
+    .review{
+        margin-bottom:15px;
+    }
+    .table-h {
+        overflow-x:auto;
+    }    
+    .table-h table{
+        min-width:500px;
+        font-size:0.85em;
+    }
+    #newsletter-form{
+        align-items: center;
+        flex-direction: column;
+    }
+    #footer-grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0 15px;
+    }
+    #footer-bottom {
+        width:100%;
+        padding:20px 15px;
+    }
+    .detail-main{
+        padding:20px 15px 0 15px;
+    }
+    .main-img{
+        width:100%;
+        height:auto;
+    }
+    .epreuve-grid {
+        grid-template-columns: 1fr;
+    }
+    .epreuve-left{
+        overflow-x: auto;
+    }
+    .epreuve-left table{
+        min-width: 300px;
+        font-size: 0.85em;
+    }
+    .table-h th,.table-h td{
+        padding:16px 8px;
+    }
+
 }
