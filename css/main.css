@@ -4,6 +4,7 @@
 
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -1342,12 +1343,13 @@ section.payement {
         flex-direction: column;
         position: absolute;
         top: 70px;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 33%;
         background-color: #1a227c;
-        padding: 1rem 0;
+        padding-top: 1rem;
         z-index: 100;
         gap: 0;
+        border-bottom-left-radius: 15px;
     }
 
     #menu-toggle:checked ~ nav {
@@ -1355,8 +1357,9 @@ section.payement {
     }
 
     header nav a {
-        padding: 0.8rem 1.5rem;
+        padding: 0.4rem 1rem !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 0 1rem;
     }
 
     #searchbar {
@@ -1371,5 +1374,9 @@ section.payement {
     }
     #menu-toggle:checked + label span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .higlight-grid{
+        row-gap:20px;
     }
 }
