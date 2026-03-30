@@ -136,7 +136,13 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-
+section.section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* FOOTER */
 footer {
@@ -347,13 +353,7 @@ p.banniere-date {
     border-radius: 30px;
 }
 
-section.accueil {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 h3.section-title {
     font-size: 2em;
@@ -369,11 +369,11 @@ h3.section-title::after {
     width: 60px;
     height: 6px;
     background: yellow;
-    margin: 10px auto 0;
+    margin: 10px auto;
     border-radius: 2px;
 }
 
-.accueil div.higlight-grid {
+div.higlight-grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -404,7 +404,7 @@ p.hl-dc {
     color: rgb(86, 84, 84);
 }
 
-.accueil div.detail-grid {
+div.detail-grid {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1174,7 +1174,6 @@ section.competition{
 
 
 .pricing-card.featured {
-    transform: scale(1.05);
     border: 3px solid yellow;
 }
 
