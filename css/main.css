@@ -199,10 +199,10 @@ footer a {
     padding: 3px 6px;
     width: 300px;
     border: none;
-
 }
 
-#form button {
+
+button {
     padding: 9px 18px;
     border-radius: 20px;
     background-color: rgb(255, 230, 0);
@@ -658,8 +658,9 @@ td {
 }
 
 .share-link {
+
     text-align: center;
-    padding-bottom: 40px;
+    padding: 20px 0 40px 0;
 }
 
 .share-link p {
@@ -699,6 +700,12 @@ td {
 
 .share-email {
     background-color: #333333;
+}
+.share-insta{
+    background-color:#d02b7c;
+}
+.share-ytb{
+    background-color:#ff0033;
 }
 
 
@@ -1194,7 +1201,39 @@ section.competition{
 
 
 /*FORMULAIRE-bis*/
-
+#contact-grid2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+}
+.contact-title {
+    font-size: 2em;
+    color: #0a115e;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+.contact-right div{
+    display:flex;
+    flex-direction: row;
+    row-gap:20px;
+    padding-bottom: 25px;
+}
+.cont-info h4{
+    margin:0;
+    color:#0a115e;
+    font-size: 1.1em;
+}
+.cont-info p{
+    margin:0;
+}
+.cont-symbol{
+    margin: 15px;
+    height: 50px;
+    width: 50px;
+}
+#cont-share {
+    margin-left:80px;
+}
 section.payement {
     margin:0 auto;
     max-width:700px;
@@ -1235,7 +1274,7 @@ section.payement {
     gap:25px;
     justify-content: center;
 }
-#pay-btn {
+#pay-btn, #contact-btn {
     padding: 9px 18px;
     border-radius: 20px;
     background-color: rgb(255, 230, 0);
