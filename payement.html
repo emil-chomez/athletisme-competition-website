@@ -19,7 +19,7 @@
 
     <header>
         <div id="in-header">
-                <div id="in-header">
+                
                 <div id="brand">
                 <a href="index.html"> 
                     <img id="logo" src="images/logo.png" alt="logo"></a>
@@ -75,14 +75,14 @@
                 </div>
                 <div class="form-ligne">
                     <div class="form-element">
-                        <label name="formula">Formule *</label>
+                        <label for="formula_form">Formule *</label>
                         <select name="formula" id="formula_form" required="">
-                            <optgroup label="Formula">
+                            
                                 <option value="">-- Choisir une formule --</option>
                                 <option value="ticket-journalier">Ticket Journalier - 35 €</option>
                                 <option value="pass-evenement">Pass Événement - 89 €</option>
                                 <option value="pass-vip">Pass VIP - 249 €</option>            
-                            </optgroup>
+                            
                         </select>
                     </div>
                     <div class="form-element">
@@ -92,12 +92,11 @@
                 </div>
                 <div class="form-element">            
                     <label style="margin-left: 1%;" for="payement_option">Choisissez le mode de paiement *</label>
-                    <select required="" name="payement_option" id="payement_option" pla>
-                    <optgroup label="Systèmes de paiement en ligne" >
+                    <select required="" name="payement_option" id="payement_option">
+                        <option value="">Votre mode de payement</option>
                         <option value="Paypal">PayPal</option>
                         <option value="Mastercard">Mastercard</option>
-                        <option value="Visa">Visa</option>
-                    </optgroup>
+                        <option value="Visa">Visa</option>            
                     </select>
                 </div>
 
