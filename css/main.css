@@ -63,13 +63,13 @@ header {
 }
 
 #brand h1 {
-    color: aliceblue;
     font-size: 1.2em;
     margin:0 10%;
 }
 
 #brand-text a {
     text-decoration: none;
+    color: aliceblue;
 }
 
 #brand-text span {
@@ -1323,7 +1323,7 @@ section.payement {
     color:#1a227c
 }
 /*Mobile display*/
-@media (max-width: 768px) {
+@media (max-width: 785px) {
     
     
     html{
@@ -1457,5 +1457,18 @@ section.payement {
     .table-h th,.table-h td{
         padding:16px 8px;
     }
-
+    #contact-grid2 {
+        grid-template-columns:1fr;
+    }
+    #map iframe{
+        width:85%;
+        height:100%;
+    }
+    .payement {
+        width:85%;
+    }
+    .form-ligne {
+        grid-template-columns: 1fr;
+        gap:0;
+    }
 }
