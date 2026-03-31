@@ -979,36 +979,6 @@ section.competition{
 
 /*============================================================ Animation KHALED FIN =========================================*/
 
-/* ============================================================ Design of all pages KHALED ========================================================*/
-
-
-
-
-
-.paytable {
-    width: max-content;
-    border-collapse: collapse;
-    /* Joins the lines together */
-
-}
-
-.paytable th,
-.paytable td {
-    border: 1px solid black;
-    /* Makes the lines visible */
-    padding: 10px;
-    /* Adds space around the text */
-    text-align: center;
-}
-
-.paytable th {
-    background-color: lightgray;
-    /* Gives the top row a light grey color */
-}
-
-#pay_button {
-    margin-left: 0%;
-}
 
 
 
@@ -1021,130 +991,6 @@ section.competition{
 
 
 
-#return_button {
-    margin-top: 1%;
-
-}
-
-
-.button-class {
-    background-color: rgb(108, 108, 108);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-#contact-grid {
-    /*=========================   NOT FINISHED   =====================================*/
-    display: grid;
-    text-align: center;
-    padding-left: 25%;
-    padding-right: 25%;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
-    padding: 10px;
-
-}
-
-#left_contact {
-    display: grid;
-    grid-gap: 10px;
-    margin-left: 30%;
-    margin-right: 0%;
-    font-size: large;
-    padding: 6px 12px;
-    border-radius: 20px;
-}
-
-#right_contact {
-    display: grid;
-    grid-gap: 5px;
-    margin-left: 0%;
-    margin-right: 25%;
-    margin-top: auto;
-
-}
-
-#left_contact.textarea {
-    font-size: large;
-}
-
-#confirmed {
-    position: absolute;
-    top: 57.5%;
-    width: 100%;
-    text-align: center;
-
-}
-
-#payement_form {
-    grid-column: 1 / -1;
-    /* 👈 take full width of the grid */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* center everything inside */
-    gap: 10px;
-    margin-top: 20px;
-}
-
-
-#payement_table {
-    width: max-content;
-    border-collapse: collapse;
-    border: 1.5px solid black;
-    padding: 10px;
-    text-align: center;
-    width: auto;
-    margin-bottom: 2%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#logo_payement {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    
-}
-
-#buttons {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-}
-
-#pay_button:hover {
-    background: #25d366;
-}
-
-#reservation_form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    align-items: center;
-    margin-bottom: 1%;
-}
-
-#reservation_form section {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 10px 15px;
-    align-items: center;
-    width: 400px;
-}
-
-
-
-/* =======================Design of all pages KHALED FIN ==========================*/
 
 
 /* ============== STYLES POUR LA PAGE TARIFS ================== */
@@ -1240,7 +1086,7 @@ section.competition{
 
 
 /*FORMULAIRE-bis*/
-#contact-grid2{
+#contact-grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:40px;
@@ -1464,7 +1310,7 @@ section.payement {
     .table-h th,.table-h td{
         padding:16px 8px;
     }
-    #contact-grid2 {
+    #contact-grid {
         grid-template-columns:1fr;
     }
     #map iframe{
