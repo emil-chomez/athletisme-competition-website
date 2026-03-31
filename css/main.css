@@ -249,7 +249,6 @@ button {
     width: 1px;
     height: 1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
 }
 
@@ -828,7 +827,6 @@ section.competition{
 }
 .pagination .active{
     background-color: #0a115e;
-    border-color: #0a115e;
     color: aliceblue;
 }
 /*PAGES SPORT*/
@@ -951,7 +949,7 @@ section.competition{
 
 /* rainbow color using HSL */
 .rainbow .circle::before {
-    background-color: hsl(calc(1turn / (var(--count) / var(--turns)) * var(--i)) 100% 70%);
+    background-color: hsl(calc(1turn * var(--i) / var(--count) * var(--turns)), 100%, 70%);
 }
 
 /* animations */
