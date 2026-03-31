@@ -9,7 +9,7 @@ révision croisée CSS, html validator
 
 Khaled : 
 html  contact.html, payement.html, submit-payment.html, 
-CSS : propriétés spécifiques à contact.html, payement.html et submit-payment.html
+CSS : propriétés spécifiques à contact.html, payement.html, submit-payment.html et animation de page de confirmation payement.
 propriétés responsive des pages
 cohérence inter-pages (liens, header/footer identiques)
 révision croisée CSS, html validator
