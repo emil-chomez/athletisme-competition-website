@@ -5,6 +5,31 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+/*Menu hamburger*/
+#menu-toggle{
+    display:none;
+    
+}
+#hamburger {
+    display:none;
+    flex-direction: column;
+    gap:5px;
+    cursor:pointer;
+}
+#hamburger span{
+    display:block;
+    width:25px;
+    height:3px;
+    background-color:aliceblue;
+    border-radius: 3px;
+    transition:0.3s;
+}
+
+
+
 body {
     margin: 0 auto;
     background-color: white;
@@ -16,7 +41,6 @@ body {
 header {
     z-index: 1000;
     width: 100%;
-
     position: sticky;
     top: 0;
     background-color: #1a227c;
@@ -39,13 +63,13 @@ header {
 }
 
 #brand h1 {
-    color: aliceblue;
     font-size: 1.2em;
     margin:0 10%;
 }
 
 #brand-text a {
     text-decoration: none;
+    color: aliceblue;
 }
 
 #brand-text span {
@@ -135,8 +159,15 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
-
+section.section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* FOOTER */
 footer {
@@ -193,10 +224,10 @@ footer a {
     padding: 3px 6px;
     width: 300px;
     border: none;
-
 }
 
-#newsletter button {
+
+button {
     padding: 9px 18px;
     border-radius: 20px;
     background-color: rgb(255, 230, 0);
@@ -347,15 +378,9 @@ p.banniere-date {
     border-radius: 30px;
 }
 
-section.accueil {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-h3.section-title {
+
+.section-title {
     font-size: 2em;
     color: #0a115e;
     padding-bottom: 20px;
@@ -363,17 +388,17 @@ h3.section-title {
     text-align: center;
 }
 
-h3.section-title::after {
+.section-title::after {
     content: '';
     display: block;
     width: 60px;
     height: 6px;
     background: yellow;
-    margin: 10px auto 0;
+    margin: 10px auto;
     border-radius: 2px;
 }
 
-.accueil div.higlight-grid {
+div.higlight-grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -382,12 +407,14 @@ h3.section-title::after {
 
 .hl-box {
     text-align: center;
-    width: 200px;
+    width: auto;
     border-radius: 25px;
     padding: 30px 20px;
     box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.1);
-    background-color: white;
 }
+
+
+
 
 .hl-icon {
     font-size: 3em;
@@ -404,7 +431,7 @@ p.hl-dc {
     color: rgb(86, 84, 84);
 }
 
-.accueil div.detail-grid {
+div.detail-grid {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -421,6 +448,7 @@ p.hl-dc {
 
 .detail-content div {
     padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 .btn-outline {
@@ -469,6 +497,7 @@ p.hl-dc {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     ;
     gap:25px;
+    padding:0 25px;
 }
 
 .fiche-sport {
@@ -548,6 +577,9 @@ p.hl-dc {
     border: none;
     border-radius: 30px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 16/9;
+    width: 90%;
+    height: auto;
 }
 
 .galerie {
@@ -658,8 +690,9 @@ td {
 }
 
 .share-link {
+
     text-align: center;
-    padding-bottom: 40px;
+    padding: 20px 0 40px 0;
 }
 
 .share-link p {
@@ -699,6 +732,12 @@ td {
 
 .share-email {
     background-color: #333333;
+}
+.share-insta{
+    background-color:#d02b7c;
+}
+.share-ytb{
+    background-color:#ff0033;
 }
 
 
@@ -1067,6 +1106,7 @@ section.competition{
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    
 }
 
 #buttons {
@@ -1174,7 +1214,6 @@ section.competition{
 
 
 .pricing-card.featured {
-    transform: scale(1.05);
     border: 3px solid yellow;
 }
 
@@ -1190,4 +1229,246 @@ section.competition{
     transform: rotate(45deg);
     font-size: 0.9em;
     font-weight: 700;
+}
+
+
+/*FORMULAIRE-bis*/
+#contact-grid2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+}
+.contact-title {
+    font-size: 2em;
+    color: #0a115e;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+.contact-right div{
+    display:flex;
+    flex-direction: row;
+    row-gap:20px;
+    padding-bottom: 25px;
+}
+.cont-info h4{
+    margin:0;
+    color:#0a115e;
+    font-size: 1.1em;
+}
+.cont-info p{
+    margin:0;
+}
+.cont-symbol{
+    margin: 15px;
+    height: 50px;
+    width: 50px;
+}
+#cont-share {
+    margin-left:80px;
+}
+section.payement {
+    margin:0 auto;
+    max-width:700px;
+}
+.form-ligne {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+.form-element {
+    margin-bottom: 20px;
+}
+.form-element label {
+    display:block;
+}
+.form-check {
+    display: flex;
+   align-items: center;
+   gap:20px;
+
+}
+.form-element select, .form-element textarea, .form-element input{
+    width: 100%;
+    padding:8px 12px;
+    border-radius:5px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+#logo_payement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+#form-btn{
+    margin:25px 0;
+    display : flex;
+    gap:25px;
+    justify-content: center;
+}
+#pay-btn, #contact-btn {
+    padding: 9px 18px;
+    border-radius: 20px;
+    background-color: rgb(255, 230, 0);
+    border: none;
+    cursor: pointer;
+    font-size:1em;
+}
+#cancel-btn {
+    padding: 9px 18px;
+    border-radius: 20px;
+    border: 1px solid #0a115e;
+    cursor: pointer;
+    text-decoration: none;
+    color:#1a227c
+}
+/*Mobile display*/
+@media (max-width: 785px) {
+    
+    
+    html{
+        font-size:14px;
+    }
+    
+    #in-header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 15px;
+        position: relative;
+    }
+    
+    #hamburger {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 33%;
+        background-color: #1a227c;
+        padding-top: 1rem;
+        z-index: 100;
+        gap: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    header nav a {
+        padding: 0.4rem 1rem !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 0 1rem;
+    }
+
+    #searchbar {
+        display: none;
+    }
+
+    #menu-toggle:checked + label span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked + label span:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked + label span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #banniere-content {
+        min-height: 350px;
+        padding:30px 20px;
+    }
+    #banniere-content h2{
+        font-size: 1.6em;
+    }
+    #banniere-content p{
+        font-size:0.9em;
+    }
+    #banniere-boutons{
+        font-size:1em;
+        flex-direction:column;
+        align-items:center;
+    }
+    .section{
+        padding-left:15px;
+        padding-right:15px;
+    }
+     .higlight-grid{
+        row-gap:20px;
+    }
+    .detail-grid, #review-grid{
+        grid-template-columns: auto !important;
+    }
+    .detail-content{
+        padding-right: 0;
+        text-align: center;
+    }
+    .review{
+        margin-bottom:15px;
+    }
+    .table-h {
+        overflow-x:auto;
+    }    
+    .table-h table{
+        min-width:500px;
+        font-size:0.85em;
+    }
+    #newsletter-form{
+        align-items: center;
+        flex-direction: column;
+    }
+    #footer-grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0 15px;
+    }
+    #footer-bottom {
+        width:100%;
+        padding:20px 15px;
+    }
+    .detail-main{
+        padding:20px 15px 0 15px;
+    }
+    .main-img{
+        width:100%;
+        height:auto;
+    }
+    .epreuve-grid {
+        grid-template-columns: 1fr;
+    }
+    .epreuve-left{
+        overflow-x: auto;
+    }
+    .epreuve-left table{
+        min-width: 300px;
+        font-size: 0.85em;
+    }
+    .table-h th,.table-h td{
+        padding:16px 8px;
+    }
+    #contact-grid2 {
+        grid-template-columns:1fr;
+    }
+    #map iframe{
+        width:85%;
+        height:100%;
+    }
+    .payement {
+        width:85%;
+    }
+    .form-ligne {
+        grid-template-columns: 1fr;
+        gap:0;
+    }
 }

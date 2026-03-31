@@ -20,6 +20,14 @@
                    <a href="../index.html"><h1>Paris Athletics<span>2026</span></h1></a>
                 </div>
                 </div>
+                <!--MENU HAMBURGER-->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!--menu normal-->
                 <nav>
                     <a class="nav" href="../index.html">Accueil</a>
                     <a class="nav" id="actif" href="../competitions.html">Compétition</a>
@@ -34,133 +42,199 @@
                 </div>
             </div>    
         </header>
-		<!--Fil d'ariane-->
-		<nav  class="breadcrumb" aria-label="Fil d'Ariane">
-			<div id="fil-arianne">
-				<ol>
-					<li><a href="../index.html">Accueil</a></li>
-					<li><a href="../competition.html">Compétitions</a></li>
-					<li aria-current="page">100 mètres</li>
-				</ol>
-			</div>
-		</nav>
-		<main id="main-content">
-			<section class="detail-header">
-				<div>
-					<span class="">Sprint</span>
-					<h1>100 mètres</h1>
-					<p>L'épreuve reine de l'athlétisme. La Course la plus rapide et le plus spectaculaire au monde.</p>
-				</div>
-			</section>
+        <div id="fil-arianne">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../competitions.html">Compétitions</a></li>
+                    <li aria-current="page">100 mètres</li>
+                </ol>
+            </nav>
+        </div>
+        <main>
+            <div class="detail-header">
+                <section>
+                    <span class="sport-tag">Sprint</span>
+                    <h2>100 mètres</h2>
+                    <p>L'épreuve reine de l'athlétisme. La course la plus rapide et la plus spectaculaire au monde.</p>
+                </section>
+            </div>
+            <div class="detail-main">
+                <div class="epreuve-grid">
+                    
+                    <div class="epreuve-left">
+                        
+                        <img class="main-img" src="../images/sprint-action.jpg" alt="Sprinteurs en pleine course sur 100 mètres">
 
-			<img src="../images/sprint-action.jpg" alt="Sprinteurs en pleine course sur 100 mètres" style="border-radius: var(--radius-lg); margin-bottom: 25px;">
-			
-			<section>
-				<h2> Description de l'épreuve</h2>
-				<p>Le 100 mètres est considéré comme l'épreuve la plus prestigieuse de l'athlétisme. Disputée en ligne droite sur la piste, cette course met en scène les athlètes les plus rapides de la planète dans un duel de pure vitesse qui dure moins de 10 secondes chez les hommes et environ 11 secondes chez les femmes.</p>
-				<p>Au Tournoi International d'Athlétisme Paris 2026, le 100 mètres se déroulera en trois phases : les séries le vendredi 10 juillet, les demi-finales le samedi 11 juillet, et la grande finale le samedi soir sous les projecteurs du Stade de France.</p>
-			</section>
+                        
+                        <section>
+                            <h3>Description de l'épreuve</h3>
+                            <p>Le 100 mètres est considéré comme l'épreuve la plus prestigieuse de l'athlétisme. Disputée en ligne droite sur la piste, cette course met en scène les athlètes les plus rapides de la planète dans un duel de pure vitesse qui dure moins de 10 secondes chez les hommes et environ 11 secondes chez les femmes.</p>
+                            <p>Au Tournoi International d'Athlétisme Paris 2026, le 100 mètres se déroulera en trois phases : les séries le vendredi 10 juillet, les demi-finales le samedi 11 juillet, et la grande finale le samedi soir sous les projecteurs du Stade de France.</p>
+                        </section>
 
-			<section>
-				<h2> Format de la compétition</h2>
-				<p>La compétition se déroule en trois tours successifs. Les séries permettent de qualifier les meilleurs sprinteurs pour les demi-finales. Les trois premiers de chaque demi-finale, ainsi que les meilleurs temps repêchés, accèdent à la finale tant attendue.</p>
-			</section>
+                        
+                        <section>
+                            <h3>Format de la compétition</h3>
+                            <p>La compétition se déroule en trois tours successifs. Les séries permettent de qualifier les meilleurs sprinteurs pour les demi-finales. Les trois premiers de chaque demi-finale, ainsi que les meilleurs temps repêchés, accèdent à la finale tant attendue.</p>
+                        </section>
 
-			<section>
-				<h2>Calendrier de l'épreuve</h2>
-				<table>
-					<thead>
-						<tr>
-							<th scope="col">Phase</th>
-							<th scope="col">Date</th>
-							<th scope="col">Horaire</th>
-							<th scope="col">Catégorie</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Séries</td>
-							<td>Vendredi 10/07</td>
-							<td>10:00</td>
-							<td>Hommes</td>
-						</tr>
-						<tr>
-							<td>Séries</td>
-							<td>Vendredi 10/07</td>
-							<td>18:00</td>
-							<td>Femmes</td>
-						</tr>
-						<tr>
-							<td>Demi-finales</td>
-							<td>Samedi 11/07</td>
-							<td>10:00</td>
-							<td>Hommes</td>
-						</tr>
-						<tr>
-							<td>Demi-finales</td>
-							<td>Samedi 11/07</td>
-							<td>18:00</td>
-							<td>Femmes</td>
-						</tr>
-						<tr>
-							<td><strong>Finale</strong></td>
-							<td><strong>Samedi 11/07</strong></td>
-							<td><strong>16:00</strong></td>
-							<td><strong>Hommes</strong></td>
-						</tr>
-						<tr>
-							<td><strong>Finale</strong></td>
-							<td><strong>Dimanche 12/07</strong></td>
-							<td><strong>14:00</strong></td>
-							<td><strong>Femmes</strong></td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
+                        
+                        <section>
+                            <h3>Calendrier de l'épreuve</h3>
+                            <div class="table-h">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Phase</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Horaire</th>
+                                            <th scope="col">Catégorie</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Séries</td>
+                                            <td>Vendredi 10/07</td>
+                                            <td>10:00</td>
+                                            <td>Hommes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Séries</td>
+                                            <td>Vendredi 10/07</td>
+                                            <td>18:00</td>
+                                            <td>Femmes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Demi-finales</td>
+                                            <td>Samedi 11/07</td>
+                                            <td>10:00</td>
+                                            <td>Hommes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Demi-finales</td>
+                                            <td>Samedi 11/07</td>
+                                            <td>18:00</td>
+                                            <td>Femmes</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Finale</strong></td>
+                                            <td><strong>Samedi 11/07</strong></td>
+                                            <td><strong>16:00</strong></td>
+                                            <td><strong>Hommes</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Finale</strong></td>
+                                            <td><strong>Dimanche 12/07</strong></td>
+                                            <td><strong>14:00</strong></td>
+                                            <td><strong>Femmes</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
 
-			<section>
-				<h2>Records</h2>
-				<table>
-					<thead>
-						<tr>
-							<th scope="col">RECORD</th>
-							<th scope="col">ATHLÉTE</th>
-							<th scope="col">TEMPS</th>
-							<th scope="col">ANNÉE</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Record du monde (H)</td>
-							<td>Usain Bolt (JAM)</td>
-							<td>9.58 s</td>
-							<td>2009</td>
-						</tr>
-						<tr>
-							<td>Record du monde (F)</td>
-							<td>Florence Griffith-Joyner (USA)</td>
-							<td>10.49 s</td>
-							<td>1988</td>
-						</tr>
-						<tr>
-							<td>Record d'Europe (H)</td>
-							<td>Jimmy Vicaut (FRA)</td>
-							<td>9.86 s</td>
-							<td>2015</td>
-						</tr>
-						
-					</tbody>
-				</table>
-				<div>
-					
+                       
+                        <section>
+                            <h3>Records</h3>
+                            <div class="table-h">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">RECORD</th>
+                                            <th scope="col">ATHLÈTE</th>
+                                            <th scope="col">TEMPS</th>
+                                            <th scope="col">ANNÉE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Record du monde (H)</td>
+                                            <td>Usain Bolt (JAM)</td>
+                                            <td class="rank-gold">9.58 s</td>
+                                            <td>2009</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Record du monde (F)</td>
+                                            <td>Florence Griffith-Joyner (USA)</td>
+                                            <td class="rank-gold">10.49 s</td>
+                                            <td>1988</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Record d'Europe (H)</td>
+                                            <td>Jimmy Vicaut (FRA)</td>
+                                            <td>9.86 s</td>
+                                            <td>2015</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
 
+                        
+                        <section>
+                            <h3>Galerie</h3>
+                            <div class="galerie">
+                                <div class="galerie-img">
+                                    <img src="../images/sprint-action.jpg" alt="100 mètres - Départ explosif">
+                                    <div class="galerie-desc">
+                                        <p class="text-centre">Départ explosif</p>
+                                    </div>
+                                </div>
+                                <div class="galerie-img">
+                                    <img src="../images/sprint-race.jpg" alt="100 mètres - Sprint final">
+                                    <div class="galerie-desc">
+                                        <p class="text-centre">Sprint final</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
-				</div>
-			</section>
-		</main>
+                        
+                        <section>
+                            <h3>Partager la page</h3>
+                            <div class="share-link">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=" class="share-btn share-facebook" title="Partager sur Facebook" target="_blank">f</a>
+                                <a href="https://www.twitter.com/intent/tweet?url=" class="share-btn share-x" title="Partager sur X" target="_blank">X</a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=" class="share-btn share-linkedin" title="Partager sur LinkedIn" target="_blank">in</a>
+                                <a href="https://wa.me/?text=" class="share-btn share-whatsapp" title="Partager sur WhatsApp" target="_blank">W</a>
+                                <a href="mailto:?subject=Paris Athletics 2026&amp;body=" class="share-btn share-email" title="Partager par e-mail" target="_blank">@</a>
+                            </div>
+                        </section>
+                    </div>
 
-
-		<footer>
+                   
+                    <div class="detail-sidebar">
+                        <h4>Informations clés</h4>
+                        <h5>Discipline</h5>
+                        <p>Sprint</p>
+                        <h5>Distance</h5>
+                        <p>100 mètres</p>
+                        <h5>Lieu</h5>
+                        <p>Piste principale - Stade de France</p>
+                        <h5>Catégories</h5>
+                        <p>Hommes &amp; Femmes</p>
+                        <h5>Participants</h5>
+                        <p>~80 athlètes (séries)</p>
+                        <h5>Phases</h5>
+                        <p>Séries → Demi-finales → Finale</p>
+                        <div class="fav">
+                            <h4>Favoris</h4>
+                            <h5>N. Lyles</h5>
+                            <p>États-Unis - 9.83 s</p>
+                            <h5>E. Thompson-Herah</h5>
+                            <p>Jamaïque - 10.54 s</p>
+                            <h5>M. De Grasse</h5>
+                            <p>Canada - 9.89 s</p>
+                        </div>
+                        <div class="detail-btn">
+                            <a class="btn-primaire" href="../payement.html" style="width:100%">Réserver mes places</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
             <section id="newsletter">
                 <h3>Restez informé</h3>
                 <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités et offres exclusives.</p>

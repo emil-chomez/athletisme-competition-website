@@ -11,7 +11,7 @@
 	</head>
 	
 	<body>
-		 <header>
+		<header>
             <div id="in-header">
                 <div id="brand">
                 <a href="../index.html"> 
@@ -20,6 +20,14 @@
                    <a href="../index.html"><h1>Paris Athletics<span>2026</span></h1></a>
                 </div>
                 </div>
+                <!--MENU HAMBURGER-->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!--menu normal-->
                 <nav>
                     <a class="nav" href="../index.html">Accueil</a>
                     <a class="nav" id="actif" href="../competitions.html">Compétition</a>
@@ -34,10 +42,170 @@
                 </div>
             </div>    
         </header>
-		<main>
-
-
-		</main>
+        <div id="fil-arianne">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../competitions.html">Compétitions</a></li>
+                    <li aria-current="page">Marathon</li>
+                </ol>
+            </nav>
+        </div>
+        <main>
+            <div class="detail-header">
+                <section>
+                    <span class="sport-tag">Endurance</span>
+                    <h2>Marathon</h2>
+                    <p>42,195 km de course à travers les rues de Paris. L'épreuve ultime d'endurance, de stratégie et de mental.</p>
+                </section>
+            </div>
+            <div class="detail-main">
+                <div class="epreuve-grid">
+                    <div class="epreuve-left">
+                        <img class="main-img" src="../images/marathon.jpg" alt="Coureurs de marathon en compétition">
+                        <section>
+                            <h3>Description de l'épreuve</h3>
+                            <p>Le marathon est l'une des épreuves les plus emblématiques de l'athlétisme. Sur une distance de 42,195 kilomètres, les coureurs doivent allier endurance physique, stratégie de course et force mentale pour franchir la ligne d'arrivée. C'est une épreuve qui raconte une histoire à chaque kilomètre.</p>
+                            <p>Pour le Tournoi Paris 2026, le parcours du marathon traversera les plus beaux monuments de Paris : départ depuis les Champs-Élysées, passage devant la Tour Eiffel, le long de la Seine, à travers le Jardin des Tuileries, et arrivée triomphale au Stade de France à Saint-Denis.</p>
+                        </section>
+                        <section>
+                            <h3>Le parcours</h3>
+                            <p>Le parcours a été conçu pour offrir un spectacle exceptionnel aux spectateurs tout en proposant un tracé rapide aux athlètes. Les points de ravitaillement sont positionnés tous les 5 kilomètres, avec des zones de rafraîchissement supplémentaires en cas de forte chaleur.</p>
+                        </section>
+                        <section>
+                            <h3>Chiffres Clés</h3>
+                            <div class="higlight-grid">
+                                <div class="hl-box">
+                                    <p class="hl-icon">&#128207;</p>
+                                    <h3 class="hl-nb">42,195</h3>
+                                    <p class="hl-dc">Kilomètres</p>
+                                </div>
+                                <div class="hl-box">
+                                    <p class="hl-icon">&#128167;</p>
+                                    <h3 class="hl-nb">9</h3>
+                                    <p class="hl-dc">Points de ravitaillement</p>
+                                </div>
+                                <div class="hl-box">
+                                    <p class="hl-icon">&#127939;</p>
+                                    <h3 class="hl-nb">120+</h3>
+                                    <p class="hl-dc">Coureurs inscrits</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Calendrier</h3>
+                            <div class="table-h">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Catégorie</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Départ</th>
+                                            <th scope="col">Lieu de départ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Marathon Hommes</strong></td>
+                                            <td>Samedi 11/07</td>
+                                            <td>09:00</td>
+                                            <td>Champs-Élysées</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Marathon Femmes</strong></td>
+                                            <td>Dimanche 12/07</td>
+                                            <td>09:00</td>
+                                            <td>Champs-Élysées</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Records</h3>
+                            <div class="table-h">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">RECORD</th>
+                                            <th scope="col">ATHLÈTE</th>
+                                            <th scope="col">TEMPS</th>
+                                            <th scope="col">ANNÉE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Record du monde (H)</td>
+                                            <td>Kelvin Kiptum (KEN)</td>
+                                            <td class="rank-gold">2:00:35</td>
+                                            <td>2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Record du monde (F)</td>
+                                            <td>Ruth Chepngetich (KEN)</td>
+                                            <td class="rank-gold">2:09:56</td>
+                                            <td>2024</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Galerie</h3>
+                            <div class="galerie">
+                                <div class="galerie-img">
+                                    <img src="../images/marathon.jpg" alt="Marathon - Peloton de coureurs">
+                                    <div class="galerie-desc">
+                                        <p class="text-centre">Peloton de coureurs</p>
+                                    </div>
+                                </div>
+                                <div class="galerie-img">
+                                    <img src="../images/stadium-event.jpg" alt="Marathon - Arrivée au stade">
+                                    <div class="galerie-desc">
+                                        <p class="text-centre">Arrivée au Stade de France</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Partager la page</h3>
+                            <div class="share-link">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=" class="share-btn share-facebook" title="Partager sur Facebook" target="_blank">f</a>
+                                <a href="https://www.twitter.com/intent/tweet?url=" class="share-btn share-x" title="Partager sur X" target="_blank">X</a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=" class="share-btn share-linkedin" title="Partager sur LinkedIn" target="_blank">in</a>
+                                <a href="https://wa.me/?text=" class="share-btn share-whatsapp" title="Partager sur WhatsApp" target="_blank">W</a>
+                                <a href="mailto:?subject=Paris Athletics 2026&amp;body=" class="share-btn share-email" title="Partager par e-mail" target="_blank">@</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="detail-sidebar">
+                        <h4>Informations clés</h4>
+                        <h5>Discipline</h5>
+                        <p>Course de fond</p>
+                        <h5>Distance</h5>
+                        <p>42,195 km</p>
+                        <h5>Parcours</h5>
+                        <p>Paris → Saint-Denis</p>
+                        <h5>Catégories</h5>
+                        <p>Hommes &amp; Femmes</p>
+                        <h5>Départ</h5>
+                        <p>Champs-Élysées</p>
+                        <h5>Arrivée</h5>
+                        <p>Stade de France</p>
+                        <div class="fav">
+                            <h4>Favoris Hommes</h4>
+                            <h5>E. Kipchoge</h5>
+                            <p>Kenya - 2:01:09</p>
+                            <h5>K. Bekele</h5>
+                            <p>Éthiopie - 2:01:41</p>
+                        </div>
+                        <div class="detail-btn">
+                            <a class="btn-primaire" href="../payement.html" style="width:100%">Réserver mes places</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 		<footer>
             <section id="newsletter">
                 <h3>Restez informé</h3>

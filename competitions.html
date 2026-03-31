@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Découvrez toutes les épreuves du Tournoi International d'Athlétisme Paris 2026 : sprints, courses de fond, sauts et lancers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Compétitions &amp; Épreuves - Paris Athletics 2026</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -12,15 +13,24 @@
     <header>
         <div id="in-header">
             <div id="brand">
-            <a href="index.html"> 
-                <img id="logo" src="images/logo.png" alt="logo"></a>
-            <div id="brand-text">
-                <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+                <a href="index.html"> 
+                    <img id="logo" src="images/logo.png" alt="logo">
+                </a>
+                <div id="brand-text">
+                    <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+                </div>
             </div>
-            </div>
+        <!--MENU HAMBURGER-->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!--menu normal-->
             <nav>
                 <a class="nav" href="index.html">Accueil</a>
-                <a class="nav" id="actif" href="competitions.html">Compétition</a>
+                <a class="nav" id="actif" href="sections.html">Compétition</a>
                 <a class="nav" href="tarifs.html">Billeterie</a>
                 <a class="nav" href="contact.html">Contact</a>
             </nav>
@@ -52,7 +62,7 @@
             </section>
         </div>
 
-        <section class="competition">
+        <section class="section">
             <h3 class="section-title">Nos épreuves</h3>
                <div id="filters">
                     <button class="filter-btn active">Toutes</button>
@@ -125,7 +135,7 @@
                 </div>
         </section>
 
-        <section class="competition">
+        <section class="section">
                 <h3 class="section-title">Épreuves en vedette</h2>
                 <div class="sport-grid">
                     <div class="fiche-sport">
@@ -167,7 +177,7 @@
                 </div>
         </section>
 
-        <section class="competition">
+        <section class="section">
             <h3 class="section-title">Équipes participantes</h3>
             <div class="sport-grid">
                 <div class="fiche-sport">
@@ -240,7 +250,7 @@
                 <h3>Navigation</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="competitions.html">Compétition</a></li>
+                    <li><a href="sections.html">Compétition</a></li>
                     <li><a href="tarifs.html">Billeterie</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>

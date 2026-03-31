@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Emil Chomez">
         <meta name="keywords" content="competition, Accueil">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
         <link rel="icon" href="images/logo.png">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -15,10 +16,18 @@
                 <div id="brand">
                 <a href="index.html"> 
                     <img id="logo" src="images/logo.png" alt="logo"></a>
-                <div id="brand-text">
-                   <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+                    <div id="brand-text">
+                        <a href="index.html"><h1>Paris Athletics<span>2026</span></h1></a>
+                    </div>
                 </div>
-                </div>
+                <!--MENU HAMBURGER-->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!--menu normal-->
                 <nav>
                     <a class="nav" id="actif" href="index.html">Accueil</a>
                     <a class="nav" href="competitions.html">Compétition</a>
@@ -34,11 +43,13 @@
             </div>    
         </header>
         
-        <nav aria-label="Breadcrumb" class="breadcrumb">
-            <ol>
-                <li><a href="index.html">Accueil</a></li>
-            </ol>
-        </nav> 
+        <div id="fil-arianne"><!--https://developer.mozilla.org/fr/docs/Web/CSS/How_to/Layout_cookbook/Breadcrumb_navigation-->
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ol>
+                    <li><a href="index.html">Accueil</a></li>
+                </ol>
+            </nav>
+        </div> 
         <main>
             <div id="banniere-principale">
                 <img id="bp-background" src="images/hero-stadium.jpg" alt="Vue panoramique du stade">
@@ -53,7 +64,7 @@
                     </div>
                 </section>
             </div>
-            <section class="accueil">
+            <section class="section">
                 <h3 class="section-title">L'évènement en chiffre</h3>
                 <div class="higlight-grid">
                     <div class="hl-box">
@@ -78,7 +89,7 @@
                     </div>
                 </div>
             </section>
-            <section class="accueil">
+            <section class="section">
                 <h3 class="section-title">Bienvenue à Paris Athletics 2026</h3>
                 <div class="detail-grid">
                     <div class="detail-content">
@@ -105,7 +116,7 @@
                     </article>
                 </div>
             </section>
-            <section class="accueil">
+            <section class="section">
                 <h3 class="section-title">Épreuves Phares</h3>
                 <div class="sport-grid">
                     <div class="fiche-sport">
@@ -138,7 +149,7 @@
                 </div>
             </section>
             <div id="section-video">
-                <section class="accueil">
+                <section class="section">
                     <h3 class="section-title">Revivez les moments forts</h3>
                     <p class="text-centre">Découvrez les temps forts des précédentes éditions et préparez-vous pour 2026.</p>
                     <div class="video-yt">
@@ -146,7 +157,7 @@
                     </div>
                 </section>
             </div>    
-            <section class="accueil">
+            <section class="section">
                 <h3 class="section-title">Galerie photos</h3>
                 <div class="galerie">
                     <div class="galerie-img">
@@ -187,7 +198,7 @@
                     </div>
                 </div>
             </section>
-            <section class="accueil">
+            <section class="section">
                  <h3 class="section-title">Calendrier des épreuves</h3>
                  <div class="table-h">
                     <table>
@@ -260,7 +271,7 @@
                     </table>
                 </div>
             </section>
-            <section class="accueil">
+            <section class="section">
                 <h3 class="section-title">Ce qu'ils en disent</h3>
                 <div id="review-grid">
                     <div class="review">
@@ -277,7 +288,7 @@
                     </div>
                 </div>
             </section>
-            <section class="accueil">
+            <section class="section">
                 <h3 class="section-title">Partagez l'événement</h3>
                 <div class="share-link">
                     <p>Partager :</p>
